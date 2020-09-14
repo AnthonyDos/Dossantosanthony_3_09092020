@@ -1,0 +1,50 @@
+@mixin border-radius($coin) {
+    border-radius: $coin; 
+  }
+  @mixin margin-left($distance) {
+    margin-left: $distance;
+  }
+  @mixin margin-right($distance) {
+    margin-right: $distance; 
+  }
+  @mixin margin-top($distance) {
+    margin-top: $distance;
+  }
+  @mixin marge-container {
+    width: 80%;
+    margin-left: 10%; 
+  }
+  @mixin flexcolumn($colonne){
+    display: flex;
+      flex-direction: column;
+      width: auto; 
+  }
+  @mixin flexcolumn($colonne){
+    display: flex;
+      flex-direction: column;
+      width: auto; 
+  }
+  @mixin marge_text_bordure ($reglage) {
+    border-radius: 15px;
+    margin: 3%;
+    text-align: start;
+    background-color: white;
+    border: white;
+    height: 60px;
+  }
+  @mixin slidedown ($slide){
+    @keyframes slidedown {
+      from {
+        transform: translateY(200px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }   
+  }
+  @mixin marge  {
+    width:80%;
+    margin-left:10%;
+  }
