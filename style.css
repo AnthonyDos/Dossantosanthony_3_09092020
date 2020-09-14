@@ -1,9 +1,9 @@
 /*=================== couleur================================= */
-/*=========================mise en page index.html=======================*/
-body, .container, .restaurant, footer {
+body, .container, .restaurant, footer, .container1, .menud {
   display: flex;
   flex-direction: column; }
 
+/*=========================mise en page index.html=======================*/
 body {
   min-width: 300px;
   padding: 0;
@@ -243,5 +243,156 @@ footer a {
 @media screen and (min-width: 1200px) {
   h1 {
     font-size: 90px; } }
+/*============================feuille de style des pages menus===================================*/
+/*======================partie header==================*/
+.header_titre {
+  width: auto;
+  display: flex;
+  text-align: center; }
+
+.header__retour {
+  margin: auto;
+  font-size: 30px;
+  margin-right: 10%;
+  color: black; }
+
+.header__titre1 {
+  margin: auto;
+  text-align: center;
+  font-family: 'Shrikhand','cursive';
+  font-style: italic;
+  font-weight: bold;
+  width: 100%;
+  font-size: 30px; }
+
+/*=====================partie centrale de la page========================*/
+span {
+  border-bottom: 2px solid #99E2D0; }
+
+.menu__h2 {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  font-size: 28px;
+  font-style: italic; }
+
+.menu__h2__coeur {
+  margin-right: 16%; }
+
+.menu__ensemble__intitule {
+  font-weight: normal;
+  margin-left: 4%;
+  font-size: 18px; }
+
+.container1 {
+  position: absolute;
+  top: 25%;
+  width: 100%; }
+
+.photo_photo1 {
+  width: 100%;
+  height: 150px; }
+
+.menu {
+  background-color: #F5F5F5;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  text-align: start;
+  padding-bottom: 4%; }
+
+.menu__ensemble_entree {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  transition: 5s;
+  animation: slidedown 5s; }
+
+@keyframes slidedown {
+  from {
+    transform: translateY(200px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+.menu__ensemble_plat {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  transition: 11s;
+  animation: slidedown 11s; }
+
+@keyframes slidedown {
+  from {
+    transform: translateY(200px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+.menu__ensemble_dessert {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  transition: 16s;
+  animation: slidedown 16s; }
+
+@keyframes slidedown {
+  from {
+    transform: translateY(200px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+.btn {
+  border-radius: 15px;
+  margin: 3%;
+  text-align: start;
+  background-color: white;
+  border: white;
+  height: 60px; }
+
+.menu__ensemble__menu--nom {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 0; }
+
+.groupe {
+  text-align: start;
+  line-height: 1px;
+  padding-left: 2%; }
+
+.menu__ensemble__textprix {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 12%; }
+
+.prix {
+  font-weight: bold; }
+
+.ajout {
+  border-radius: 25px;
+  font-size: 20px;
+  text-align: center;
+  margin: 4% 30% 4% 30%;
+  padding: 2% 0 2% 0;
+  background-color: #9356DC;
+  border: #9356DC;
+  color: white; }
+
+/*=========partie footer================*/
+footer {
+  background-color: #424242;
+  color: white;
+  width: 100%; }
+
+footer h4 {
+  font-size: 18px;
+  margin-top: 16px; }
+
+.footer__p {
+  padding-left: 4%; }
+
+footer a {
+  text-decoration: none;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
