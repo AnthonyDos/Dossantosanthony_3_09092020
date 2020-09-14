@@ -246,14 +246,14 @@ footer a {
 /*============================feuille de style des pages menus===================================*/
 /*======================partie header==================*/
 .header_titre {
-  width: auto;
+  width: 100%;
   display: flex;
-  text-align: center; }
+  justify-content: space-between; }
 
 .header__retour {
   margin: auto;
+  margin-left: 2%;
   font-size: 30px;
-  margin-right: 10%;
   color: black; }
 
 .header__titre1 {
@@ -394,5 +394,37 @@ footer h4 {
 footer a {
   text-decoration: none;
   color: white; }
+
+/*=================media queries 600px==================*/
+@media screen and (min-width: 600px) {
+  .header_titre {
+    margin: auto; }
+
+  .header__titre1 {
+    font-size: 40px; }
+
+  .container1 {
+    position: absolute;
+    top: 20%; }
+
+  .menu__h2 {
+    margin-left: 5%;
+    font-size: 25px; }
+
+  .menu__h2__coeur {
+    margin-right: 21%; }
+
+  .menu__ensemble_entree .menu__ensemble__intitule {
+    margin: auto;
+    margin-left: 4%; }
+
+  .menu__ensemble_entree, .menu__ensemble_plat, .menu__ensemble_dessert {
+    margin: 0 5% 0 5%; }
+
+  .groupe {
+    margin: 0 2% 0 2%; }
+
+  .footer__p {
+    margin-left: 4%; } }
 
 /*# sourceMappingURL=style.css.map */
