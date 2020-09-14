@@ -1,0 +1,247 @@
+/*=================== couleur================================= */
+/*=========================mise en page index.html=======================*/
+body, .container, .restaurant, footer {
+  display: flex;
+  flex-direction: column; }
+
+body {
+  min-width: 300px;
+  padding: 0;
+  margin: 0; }
+
+header {
+  display: flex;
+  width: auto;
+  margin: auto; }
+
+.container {
+  margin-top: 0;
+  background-color: white; }
+
+h1 {
+  font-family: 'Shrikhand','cursive';
+  width: auto;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px; }
+
+.restaurant h2 {
+  font-family: 'shrikhand', cursive;
+  text-align: center;
+  font-size: 17px; }
+
+h3 {
+  font-family: roboto;
+  font-size: 14px;
+  text-align: center; }
+
+.choix h2, .menu h2 {
+  margin-left: 4%; }
+
+.choix__button {
+  display: flex;
+  border-radius: 20px;
+  width: 84%;
+  background-color: #F5F5F5;
+  font-weight: bold;
+  border-color: #F5F5F5;
+  margin: auto;
+  height: 40px;
+  padding-top: 6%;
+  padding-left: 10%; }
+
+.choix__button:hover {
+  background-color: #F5F5F5; }
+
+.choix i {
+  display: inline; }
+
+#restaurant__btn {
+  list-style: none;
+  text-align: center;
+  width: 60%;
+  font-size: 8px;
+  padding: 0 10% 10% 20%;
+  padding: 0 10% 10% 20%; }
+  #restaurant__btn li {
+    background-color: #9356DC;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #B39DDB;
+    border: solid 1px #B39DDB; }
+
+#restaurant__btn li {
+  background-color: #9356DC;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #B39DDB;
+  border: solid 1px #B39DDB; }
+
+#restaurant__btn li li {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s;
+  border-radius: 0;
+  background: #B39DDB;
+  box-shadow: none;
+  border: none; }
+
+#restaurant__btn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  padding: 4%;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 1.5em; }
+
+#restaurant__btn ul li a, #restaurant__btn li:hover li a {
+  font-size: 1em; }
+
+#restaurant__btn li:hover {
+  background: #B39DDB; }
+
+#restaurant__btn li li:hover {
+  background: #999; }
+
+#restaurant__btn ul li:last-child {
+  border-radius: 0 0 25px 25px;
+  border: none; }
+
+#restaurant__btn li:hover li {
+  max-height: 15em; }
+
+/*==========groupe============*/
+.restaurant, .choix {
+  width: 100%;
+  margin-top: 10%; }
+
+.restaurant {
+  background-color: #F5F5F5;
+  margin-top: auto; }
+
+.menu {
+  width: 100%;
+  text-align: start;
+  margin-top: 10%;
+  background-color: #F5F5F5; }
+
+.menu__menu1 {
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.plat {
+  height: 550px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px; }
+
+.plat1 {
+  border-radius: 15px;
+  padding-left: 3%;
+  display: flex;
+  margin-bottom: 5%; }
+
+.plat1__coeur {
+  margin-left: auto;
+  margin-right: 7%;
+  font-size: 28px; }
+
+.plat1__paragraphe a {
+  padding-bottom: 5px;
+  text-decoration: none; }
+
+.restaurant__position {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  background-color: #E0E0E0;
+  border-top: 2px solid #BDBDBD; }
+
+.identite {
+  text-align: justify;
+  width: 94%;
+  margin-top: 14px;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+/*===============footer============*/
+footer {
+  background-color: #424242;
+  color: white;
+  padding-left: 2%;
+  text-decoration: none; }
+  footer footer h4 {
+    font-size: 18px;
+    margin-top: 16px; }
+
+footer a {
+  text-decoration: none;
+  color: white; }
+
+/*=========icones=========*/
+.fas.fa-store {
+  color: #9356DC; }
+
+.choix i {
+  color: gray; }
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 60px; }
+
+  #restaurant__btn {
+    width: 30%;
+    margin-left: auto;
+    margin-right: 25%;
+    padding-bottom: 5%; }
+
+  .choix {
+    margin: auto; }
+
+  .menu h2 {
+    margin-left: 10%; }
+
+  .choix__button {
+    padding-top: 3%; }
+
+  .menu__menu1 {
+    width: 80%;
+    margin: auto; } }
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 90px; }
+
+  .container {
+    width: 80%;
+    margin-left: 10%; }
+
+  .choix {
+    margin: auto; }
+
+  .restaurant h2 {
+    font-size: 22px; }
+
+  #restaurant__btn a {
+    font-size: 1.3rem; }
+
+  .choix {
+    margin: auto; }
+
+  .choix h2 {
+    margin-left: 10%; }
+
+  .choix__button {
+    width: 70%;
+    font-size: 20px; }
+
+  footer {
+    width: 80%;
+    margin-left: 10%; } }
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 90px; } }
+
+/*# sourceMappingURL=style.css.map */
