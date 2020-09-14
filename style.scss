@@ -396,7 +396,7 @@ span {
 footer  {
     background-color: #424242;
     color: white;
-    width: 100%; 
+    width: 98%; 
     
 }
   
@@ -446,6 +446,75 @@ footer a {
         margin: 0 2% 0 2%; 
     }
       .footer__p {
-        margin-left: 4%;
+        margin-left: 2%;
     }  
 }
+/*=================media queries 900px==================*/
+@media screen and (min-width: 900px) 
+{
+    .header__titre {
+      font-size: 70px;
+       }
+       .header__retour{
+         margin-left:10%;
+       }
+       
+      .photo_photo1 {
+        width:80%;
+        height:auto;
+        margin-left:10%;
+      }
+    .container1 {
+      width:80%;
+      margin-left:10%;
+      top:50%;
+    }
+    .menu h2 {
+      margin-left: 9%;
+      font-size: 45px;
+      margin: 0 0 10% 13%; 
+    }
+  
+    .menu__h2__coeur {
+      margin-right: 25%; 
+    }
+  
+    .btn {
+      height: 80px; 
+    }
+  
+    .menu__ensemble__intitule {
+      font-size: 28px; 
+    }
+  
+    .menu__ensemble_entree {
+      margin-left: 15%; 
+    }
+  
+    .menu__ensemble_dessert, .menu__ensemble_plat, .menu__ensemble_entree {
+      margin: 0 10% 0 10%; }
+  
+    .menu__ensemble__menu--nom {
+      font-size: 21px; 
+    }
+  
+    .groupe {
+      margin: 0 3% 0 3%;
+      font-size: 18px; }
+  
+    .ajout {
+      height: 40px;
+      padding: 1% 0 2% 0;
+      font-size: 30px; 
+    }
+  
+    .footer__p {
+      margin-left: 6%; 
+    }
+  
+    footer {
+      width: 98%;
+      margin: auto; 
+    } 
+}
+  
