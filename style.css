@@ -304,9 +304,9 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
+  width: auto;
   transition: 5s;
   animation: slidedown 5s; }
-
 @keyframes slidedown {
   from {
     transform: translateY(200px);
@@ -318,9 +318,9 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
+  width: auto;
   transition: 11s;
   animation: slidedown 11s; }
-
 @keyframes slidedown {
   from {
     transform: translateY(200px);
@@ -332,9 +332,9 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
+  width: auto;
   transition: 16s;
   animation: slidedown 16s; }
-
 @keyframes slidedown {
   from {
     transform: translateY(200px);
