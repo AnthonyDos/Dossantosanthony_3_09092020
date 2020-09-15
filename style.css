@@ -363,7 +363,7 @@ span {
   padding-left: 2%; }
 
 .menu__ensemble__textprix {
-  margin-right: 12%; }
+  margin-right: 20%; }
 
 .prix {
   font-weight: bold; }
@@ -486,13 +486,5 @@ footer a {
   .container1 {
     top: 55%; } }
 /*=====================menu 2 css==================*/
-.container3 {
-  position: absolute;
-  top: 30%;
-  width: 100%; }
-
-@media screen and (min-width: 600px) {
-  container3 {
-    position: absolute; } }
 
 /*# sourceMappingURL=style.css.map */
