@@ -279,7 +279,7 @@ span {
   font-style: italic; }
 
 .menu__h2__coeur {
-  margin-right: 16%; }
+  margin-right: 20%; }
 
 .menu__ensemble__intitule {
   font-weight: normal;
@@ -411,7 +411,7 @@ footer a {
     margin-left: 9%; }
 
   .menu__h2__coeur {
-    margin-right: 21%; }
+    margin-right: 28%; }
 
   .menu__ensemble_entree .menu__ensemble__intitule {
     margin: auto;
@@ -449,7 +449,7 @@ footer a {
     margin: 0 0 10% 13%; }
 
   .menu__h2__coeur {
-    margin-right: 25%; }
+    margin-right: 26%; }
 
   .btn {
     height: 80px; }
@@ -501,5 +501,20 @@ footer a {
 
   .menu__h2__coeur {
     margin-right: 32%; } }
+/*=================menu4 css=============*/
+.container4 {
+  position: absolute;
+  top: 40%;
+  width: 100%; }
+
+@media screen and (min-width: 600px) {
+  .container4 {
+    top: 50%; } }
+@media screen and (min-width: 900px) {
+  .container4 {
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    margin-left: 10%; } }
 
 /*# sourceMappingURL=style.css.map */
