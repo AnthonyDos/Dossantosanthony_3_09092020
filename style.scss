@@ -483,8 +483,9 @@ footer a {
       height: 80px; 
     }
   
-    .menu__ensemble__intitule {
-      font-size: 28px; 
+    h2.menu__ensemble__intitule {
+      font-size: 24px;
+      margin:4% 0 0 4%;
     }
   
     .menu__ensemble_entree {
@@ -496,7 +497,7 @@ footer a {
   
     .menu__ensemble__menu--nom {
       font-size: 21px; 
-    }
+    } 
   
     .groupe {
       margin: 0 3% 0 3%;
@@ -504,7 +505,7 @@ footer a {
   
     .ajout {
       height: 40px;
-      padding: 1% 0 2% 0;
+      padding: 1 0 2% 0;
       font-size: 30px; 
     }
   
