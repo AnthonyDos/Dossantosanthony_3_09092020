@@ -1,0 +1,21 @@
+body {
+  max-width: 1550px;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  display: flex;
+  background-color: white; }
+
+header {
+  width: auto; }
+
+h1 {
+  font-family: 'Shrikhand','cursive';
+  width: 100%;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center; }
+
+/*# sourceMappingURL=style_menu.css.map */
