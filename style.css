@@ -486,5 +486,9 @@ footer a {
   .container1 {
     top: 55%; } }
 /*=====================menu 2 css==================*/
+.container3 {
+  position: absolute;
+  top: 30%;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
