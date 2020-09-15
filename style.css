@@ -3,6 +3,10 @@ body, .container, .restaurant, footer, .container1, .menud {
   display: flex;
   flex-direction: column; }
 
+.menu__h2, .menu__ensemble__textprix {
+  display: flex;
+  justify-content: space-between; }
+
 /*=========================mise en page index.html=======================*/
 body {
   min-width: 300px;
@@ -270,8 +274,6 @@ span {
   border-bottom: 2px solid #99E2D0; }
 
 .menu__h2 {
-  display: flex;
-  justify-content: space-between;
   height: 50px;
   font-size: 28px;
   font-style: italic; }
@@ -361,8 +363,6 @@ span {
   padding-left: 2%; }
 
 .menu__ensemble__textprix {
-  display: flex;
-  justify-content: space-between;
   margin-right: 12%; }
 
 .prix {
