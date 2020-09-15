@@ -488,6 +488,7 @@ footer a {
 /*=====================menu 2 css==================*/
 .container2 {
   position: absolute;
-  top: 30%; }
+  top: 30%;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
