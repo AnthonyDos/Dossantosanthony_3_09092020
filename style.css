@@ -206,6 +206,16 @@ h3 {
   background-color: #E0E0E0;
   border-top: 2px solid #BDBDBD; }
 
+.load {
+  width: 1500;
+  height: 1125;
+  display: flex;
+  justify-content: space-evenly; }
+  .load__bar {
+    background-color: #15DEA5;
+    height: 100%;
+    width: 3vh; }
+
 .identite {
   text-align: justify;
   width: 94%;
@@ -291,6 +301,23 @@ footer a {
     width: 70%;
     font-size: 20px; }
 
+  .progress__bar {
+    animation: progress-bar 1000ms; }
+
+  @keyframes progress-bar {
+    0% {
+      transform: scaleX(0);
+      opacity: .1; }
+    17% {
+      transform: scaleX(0.18); }
+    24% {
+      transform: scaleX(0.4); }
+    46% {
+      transform: scaleX(0.81); }
+    85%,100% {
+      opacity: 1; }
+    100% {
+      transform: scaleX(1); } }
   footer {
     width: 80%;
     margin-left: 10%; } }
