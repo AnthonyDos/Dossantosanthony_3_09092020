@@ -48,3 +48,24 @@
     width:80%;
     margin-left:10%;
   }
+  @mixin number_badge {
+  position: absolute;
+  background: #9356DC;
+  height:1.2rem;
+  margin-top:5%;
+  width:1.2rem;
+  text-align: center;
+  line-height: 1.2rem;;
+  font-size: 1rem;
+  border-radius: 50%;
+  color:white;
+  border:1px solid #9356DC;
+}
+@mixin number_badge_600px {
+  margin-left:2%;
+  margin-top:1rem;
+}
+@mixin number_badge_900px {
+  margin-left: 7%;
+  margin-top: 1.3rem; 
+}
