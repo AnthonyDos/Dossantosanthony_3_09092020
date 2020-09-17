@@ -34,6 +34,7 @@ h1 {
   font-weight: bold;
   font-size: 30px; 
 }
+
 .restaurant h2 {
   font-family: 'shrikhand', cursive;
   text-align: center;
@@ -80,7 +81,18 @@ h3 {
     border: solid 1px $couleurhover; 
   }
 }
-
+#badge1:after{
+  content:"1";
+  @include number_badge;
+}
+#badge2:after{
+  content:"2";
+  @include number_badge;
+}
+#badge3:after{
+  content:"3";
+  @include number_badge;
+}
 #restaurant__btn li {
   background-color:$primarycolor;
   border-radius: 25px;
@@ -218,6 +230,9 @@ footer a {
     .choix {
         margin:auto;
     }
+    #badge1:after, #badge2:after, #badge3:after{
+      @include number_badge_600px;
+    }
     .menu h2 {
         margin-left: 10%;
     }   
@@ -234,6 +249,10 @@ footer a {
 h1 { 
     font-size: 90px; 
 }
+#badge1:after,#badge2:after, #badge3:after {
+  @include number_badge_900px;
+}
+
 .container {
     @include marge-container;
 }
@@ -573,4 +592,3 @@ footer a {
     margin-left:10%;
   }
 }
- 

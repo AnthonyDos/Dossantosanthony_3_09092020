@@ -74,6 +74,48 @@ h3 {
     box-shadow: 3px 3px 3px #B39DDB;
     border: solid 1px #B39DDB; }
 
+#badge1:after {
+  content: "1";
+  position: absolute;
+  background: #9356DC;
+  height: 1.2rem;
+  margin-top: 5%;
+  width: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid #9356DC; }
+
+#badge2:after {
+  content: "2";
+  position: absolute;
+  background: #9356DC;
+  height: 1.2rem;
+  margin-top: 5%;
+  width: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid #9356DC; }
+
+#badge3:after {
+  content: "3";
+  position: absolute;
+  background: #9356DC;
+  height: 1.2rem;
+  margin-top: 5%;
+  width: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid #9356DC; }
+
 #restaurant__btn li {
   background-color: #9356DC;
   border-radius: 25px;
@@ -205,6 +247,10 @@ footer a {
   .choix {
     margin: auto; }
 
+  #badge1:after, #badge2:after, #badge3:after {
+    margin-left: 2%;
+    margin-top: 1rem; }
+
   .menu h2 {
     margin-left: 10%; }
 
@@ -217,6 +263,10 @@ footer a {
 @media screen and (min-width: 900px) {
   h1 {
     font-size: 90px; }
+
+  #badge1:after, #badge2:after, #badge3:after {
+    margin-left: 7%;
+    margin-top: 1.3rem; }
 
   .container {
     width: 80%;
