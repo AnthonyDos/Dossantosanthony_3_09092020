@@ -445,12 +445,47 @@ span {
     transform: translateY(0);
     opacity: 1; } }
 .btn {
+  display: flex;
   border-radius: 15px;
   margin: 3%;
   text-align: start;
   background-color: white;
   border: white;
   height: 60px; }
+
+.btn__btn2 {
+  left: 33%;
+  transform: translateX(-100%);
+  position: relative;
+  background-color: aqua;
+  width: 0;
+  border-radius: 0 12px 12px 0;
+  transition: width 2s; }
+
+.btn__btn2 .fas.fa-check-circle {
+  opacity: 1;
+  color: white; }
+
+.btn:hover .btn__btn2 {
+  position: relative;
+  margin-left: 2%;
+  background-color: aqua;
+  width: 70px;
+  border-radius: 0 12px 12px 0;
+  transition: width 2s; }
+
+.btn:hover .btn__btn2 .fas.fa-check-circle {
+  opacity: 1;
+  width: 0;
+  transform: scale(1);
+  transform: rotate 360deg;
+  transition: transform 500ms; }
+
+.fa-check-circle {
+  transform: scale(0.1);
+  opacity: 1;
+  transform: rotate(180deg);
+  transition: transform 500ms; }
 
 .menu__ensemble__menu--nom {
   font-weight: bold;
@@ -584,7 +619,41 @@ footer a {
     margin: auto; } }
 @media screen and (min-width: 1200px) {
   .container1 {
-    top: 55%; } }
+    top: 55%; }
+
+  .btn__btn2 {
+    left: 100%;
+    transform: translateX(-100%);
+    position: relative;
+    background-color: aqua;
+    width: auto;
+    border-radius: 0 12px 12px 0;
+    transition: width 2s; }
+
+  .btn__btn2 .fas.fa-check-circle {
+    opacity: 1;
+    color: white; }
+
+  .btn:hover .btn__btn2 {
+    position: relative;
+    margin-left: 100%;
+    background-color: aqua;
+    width: 70px;
+    border-radius: 0 12px 12px 0;
+    transition: width 2s; }
+
+  .btn:hover .btn__btn2 .fas.fa-check-circle {
+    opacity: 1;
+    width: 0;
+    transform: scale(1);
+    transform: rotate 360deg;
+    transition: transform 500ms; }
+
+  .fa-check-circle {
+    transform: scale(0.1);
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: transform 500ms; } }
 /*=====================menu 3 css==================*/
 .container3 {
   position: absolute;
