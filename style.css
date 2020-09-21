@@ -209,7 +209,7 @@ h3 {
   position: absolute;
   right: 29px;
   padding-top: 12px;
-  font-size: 29px;
+  font-size: 30px;
   opacity: 0;
   color: white; }
 
@@ -274,6 +274,28 @@ footer a {
 .choix i {
   color: gray; }
 
+/*=======media queries min-width 350px pour le coeur====*/
+@media screen and (min-width: 360px) {
+  .fas.fa-heart {
+    right: 31px;
+    opacity: 0; } }
+/*=========media queries min-width 375 px pour le coeur=======*/
+@media screen and (min-width: 375px) {
+  .fas.fa-heart {
+    right: 33px;
+    opacity: 0; } }
+/*===========media queries min-width 411px pour le coeur==========*/
+@media screen and (min-width: 411px) {
+  .fas.fa-heart {
+    right: 35px;
+    opacity: 0; } }
+/*=====media queries min-width:540px pour le coeur=======*/
+@media screen and (min-width: 540px) {
+  .fas.fa-heart {
+    text-align: center;
+    padding-right: 9px;
+    padding-top: 11px;
+    opacity: 0; } }
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px) {
   h1 {
@@ -304,6 +326,12 @@ footer a {
   .menu__menu1 {
     width: 80%;
     margin: auto; } }
+/*=====media queries min-width:768px pour le coeur=======*/
+@media screen and (min-width: 768px) {
+  .fas.fa-heart {
+    text-align: center;
+    padding-right: 11%;
+    opacity: 0; } }
 /*=====media queries min-width:900px page index=======*/
 @media screen and (min-width: 900px) {
   h1 {
@@ -359,6 +387,12 @@ footer a {
   footer {
     width: 80%;
     margin-left: 10%; } }
+/*=====media queries min-width:1024px pour le coeur=======*/
+@media screen and (min-width: 1024px) {
+  .fas.fa-heart {
+    text-align: center;
+    padding-right: 19%;
+    opacity: 0; } }
 /*=====media queries min-width:1200px page index=======*/
 @media screen and (min-width: 1200px) {
   h1 {
