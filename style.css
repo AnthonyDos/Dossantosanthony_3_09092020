@@ -207,10 +207,11 @@ h3 {
 
 .fas.fa-heart {
   position: absolute;
-  right: 92px;
+  right: 29px;
   padding-top: 12px;
   font-size: 29px;
-  opacity: 0; }
+  opacity: 0;
+  color: white; }
 
 .fas.fa-heart:hover {
   cursor: pointer;
