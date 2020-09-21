@@ -26,12 +26,13 @@
   }
   @mixin marge_text_bordure ($reglage) {
     display: flex;
+    justify-content: space-between;
     border-radius: 15px;
     margin: 3%;
     text-align: start; 
     background-color: white;
     border: white;
-    height: 60px;
+    height: 60px; 
   }
   @mixin slidedown ($slide){
     @keyframes slidedown {
