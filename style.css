@@ -205,6 +205,24 @@ h3 {
   margin-right: 7%;
   font-size: 28px; }
 
+.fas.fa-heart {
+  position: absolute;
+  right: 92px;
+  padding-top: 12px;
+  font-size: 29px;
+  opacity: 0; }
+
+.fas.fa-heart:hover {
+  cursor: pointer;
+  color: #9356DC;
+  animation-name: heart;
+  animation-duration: 13s; }
+
+@keyframes heart {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .plat1__paragraphe a {
   padding-bottom: 5px;
   text-decoration: none; }
