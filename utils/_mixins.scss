@@ -25,9 +25,10 @@
       width: auto; 
   }
   @mixin marge_text_bordure ($reglage) {
+    display: flex;
     border-radius: 15px;
     margin: 3%;
-    text-align: start;
+    text-align: start; 
     background-color: white;
     border: white;
     height: 60px;
