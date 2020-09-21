@@ -210,7 +210,7 @@ h3 {
   right: 29px;
   padding-top: 12px;
   font-size: 30px;
-  opacity: 0;
+  opacity: 1;
   color: white; }
 
 .fas.fa-heart:hover {
@@ -454,6 +454,25 @@ span {
 .menu__h2__coeur {
   margin-right: 20%; }
 
+.menu__h2__coeur1 {
+  position: relative;
+  right: 24%;
+  bottom: 14px;
+  font-size: 30px;
+  opacity: 0;
+  color: white; }
+
+.menu__h2__coeur1:hover {
+  cursor: pointer;
+  color: #9356DC;
+  animation-name: heart1;
+  animation-duration: 13s; }
+
+@keyframes heart1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .menu__ensemble__intitule {
   font-weight: normal;
   margin-left: 4%;
