@@ -418,6 +418,38 @@ footer {
      right:19%;
    }
 }
+/*=========media queries min-width 1366 px pour le coeur=======*/
+@media screen and (min-width:1366px)
+{
+  .fas.fa-heart {
+    right: 44px;
+    opacity: 0;
+   }
+}
+/*=========media queries min-width 1400 px pour le coeur=======*/
+@media screen and (min-width:1400px)
+{
+  .fas.fa-heart {
+    right: 45px;
+    opacity: 0;
+   }
+}
+/*=========media queries min-width 1440 px pour le coeur=======*/
+@media screen and (min-width:1440px)
+{
+  .fas.fa-heart {
+    right: 47px;
+    opacity: 0;
+   }
+}
+/*=========media queries min-width 1680 px pour le coeur=======*/
+@media screen and (min-width:1680px)
+{
+  .fas.fa-heart {
+    right: 55px;
+    opacity: 0;
+   }
+}
  /*============================feuille de style des pages menus===================================*/
 
 body, .container, .restaurant, footer, .container1 , .menud, footer {
