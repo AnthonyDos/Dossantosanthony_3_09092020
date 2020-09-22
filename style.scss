@@ -175,17 +175,18 @@ h3 {
 }
 .plat1__coeur {
   position: absolute;
-  right: 5%;
+  right: 16px;
+  padding-top: 3px;
   font-size: 28px; 
 }
 
 .plat1__coeur2{
   position:absolute;
-  right:18px;
+  right:15px;
   font-size:30px;
   opacity:0;
   color:white;
-} 
+}  
 .plat1__coeur2:hover{
   cursor:pointer;
   color:#9356DC;
@@ -257,14 +258,7 @@ footer a {
 .choix i {
   color: gray;
 } 
-/*=======media queries min-width:450px placement coeur====*/
-@media screen and (min-width:450px)
-{
-  .plat1__coeur2{
-    position:absolute;
-    right:5%;
-  } 
-}
+
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px)
 {
