@@ -164,33 +164,34 @@ h3 {
   border-radius: 15px 15px 0px 0px; 
 }
 .plat1 {
+  display: flex;
   border-radius: 15px;
   padding-left: 3%;
-  display: flex;
+  padding-right: 3%;
   margin-bottom: 5%; 
 }
 .news{
   @include new;
 }
 .plat1__coeur {
-  margin-left: auto;
-  margin-right: 7%;
+  position: absolute;
+  right: 5%;
+  top: 1%;
   font-size: 28px; 
 }
 
-.fas.fa-heart{
+.plat1__coeur2{
   position:absolute;
-  right:29px;
-  padding-top:12px;
+  right:18px;
   font-size:30px;
   opacity:1;
   color:black;
 } 
-.fas.fa-heart:hover{
+.plat1__coeur2:hover{
   cursor:pointer;
   color:#9356DC;
   animation-name: heart;
-  animation-duration:13s;
+  animation-duration:10s;
 }
 @keyframes heart {
   0% {
@@ -257,39 +258,13 @@ footer a {
 .choix i {
   color: gray;
 } 
-/*=======media queries min-width 350px pour le coeur====*/
-@media screen and (min-width: 360px)
+/*=======media queries min-width:450px placement coeur====*/
+@media screen and (min-width:450px)
 {
-  .fas.fa-heart {
-    right: 31px;
-    opacity: 0;
-   }
-}
-/*=========media queries min-width 375 px pour le coeur=======*/
-@media screen and (min-width:375px)
-{
-  .fas.fa-heart {
-    right: 33px;
-    opacity: 0;
-   }
-}
-/*===========media queries min-width 411px pour le coeur==========*/
-@media screen and (min-width:411px)
-{
-  .fas.fa-heart {
-  right: 35px;
-  opacity: 0;
-  }
-}
-/*=====media queries min-width:540px pour le coeur=======*/
-@media screen and (min-width: 540px)
-{
-  .fas.fa-heart {
-  text-align:center;
-  padding-right:9px;
-  padding-top:11px;
-  opacity: 0;
-  }
+  .plat1__coeur2{
+    position:absolute;
+    right:5%;
+  } 
 }
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px)
@@ -300,6 +275,14 @@ footer a {
     .news {
       right:12%;
     }
+    .plat1__coeur {
+      position: absolute;
+      right: 20%;
+    }
+    .plat1__coeur2{
+      position:absolute;
+      right:20%;
+    } 
     #restaurant__btn  {
         width:30%;
         margin-left:auto;
@@ -323,15 +306,7 @@ footer a {
         margin: auto;
   }
 }
-/*=====media queries min-width:768px pour le coeur=======*/
-@media screen and (min-width: 768px)
-{
-  .fas.fa-heart {
-  text-align:center;
-  padding-right:11%;
-  opacity: 0;
-  }
-}
+
  /*=====media queries min-width:900px page index=======*/
 @media screen and (min-width: 900px)
 {
@@ -341,6 +316,14 @@ h1 {
 .news {
   right:19%;
 }
+.plat1__coeur {
+  position: absolute;
+  right: 20%;
+}
+.plat1__coeur2{
+  position:absolute;
+  right:20%;
+} 
 #badge1:after,#badge2:after, #badge3:after {
   @include number_badge_900px;
 }
@@ -368,6 +351,7 @@ h1 {
     width:70%;
     font-size:20px; 
 }
+/*
 .progress {
   &__bar {
       animation: progress-bar 1000ms;
@@ -395,61 +379,23 @@ h1 {
       transform: scaleX(1);
   }
 }
+*/
 footer {
     @include marge-container
   }
 } 
-/*=====media queries min-width:1024px pour le coeur=======*/
-@media screen and (min-width: 1024px)
-{
-  .fas.fa-heart {
-  text-align:center;
-  padding-right:19%;
-  opacity: 0;
-  }
-}
+
 /*=====media queries min-width:1200px page index=======*/
 @media screen and (min-width:1200px)
  {
-   h1 {
+  h1 {
      font-size: 90px;
-   }
-   .news {
+  }
+  .news {
      right:19%;
-   }
+  }
 }
-/*=========media queries min-width 1366 px pour le coeur=======*/
-@media screen and (min-width:1366px)
-{
-  .fas.fa-heart {
-    right: 44px;
-    opacity: 0;
-   }
-}
-/*=========media queries min-width 1400 px pour le coeur=======*/
-@media screen and (min-width:1400px)
-{
-  .fas.fa-heart {
-    right: 45px;
-    opacity: 0;
-   }
-}
-/*=========media queries min-width 1440 px pour le coeur=======*/
-@media screen and (min-width:1440px)
-{
-  .fas.fa-heart {
-    right: 47px;
-    opacity: 0;
-   }
-}
-/*=========media queries min-width 1680 px pour le coeur=======*/
-@media screen and (min-width:1680px)
-{
-  .fas.fa-heart {
-    right: 55px;
-    opacity: 0;
-   }
-}
+ 
  /*============================feuille de style des pages menus===================================*/
 
 body, .container, .restaurant, footer, .container1 , .menud, footer {
@@ -485,40 +431,17 @@ span {
     border-bottom: 2px solid $tertiarycolor; 
 }
   
-.menu__h2 {
+.menu1__h2, .menu1 h2 {
   display:flex;
-  justify-content:space-between;
+  margin-left: 3%;
+  margin-right: 20%;
   height: 50px;
   font-size: 28px;
   font-style: italic; 
 }
-
-.menu__h2__coeur {
-  margin-left: 28px; 
-}
- 
-.menu__h2__coeur1 {
-  position: relative;
-  right: 9%;
-  bottom: 14px;
-  font-size: 30px;
-  opacity: 0;
-  color: white; 
-}
-
-.menu__h2__coeur1:hover{
-  cursor:pointer;
-  color:#9356DC;
-  animation-name: heart1;
-  animation-duration:13s;
-}
-@keyframes heart1 {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+.menu1__h2__coeur, .menu1__h2__coeur1 {
+  position: absolute;
+  right: 20%;
 }
 .menu__ensemble__intitule {
     font-weight: normal;
@@ -528,7 +451,7 @@ span {
   
 .container1  {
     position: absolute;
-    top:20%;
+    top:16%;
     width: 100%;
 }
    
@@ -661,177 +584,137 @@ footer a {
     text-decoration: none;
     color: white; 
 }
-/*=======media queries 320px========*/
-@media screen and (min-width: 320px) {
-  .menu__h2__coeur1 {
-    right: 36px;
-    bottom: 15px; 
-  } 
-}
-/*=======media queries 375px========*/
-@media screen and (min-width: 375px) {
-  .menu__h2__coeur{
-    margin-left:14%;
-  }
-  .menu__h2__coeur1 {
-    opacity:1;
-    right: 47px;
-    bottom: 15px; 
-    } 
-}
-/*=======media queries 414px========*/
-@media screen and (min-width: 414px) {
-  .menu__h2__coeur{
-    margin-left:18%;
-  }
-  .menu__h2__coeur1 {
-    opacity:1;
-    right: 53px;
-    bottom: 15px; 
-    } 
-}   
-/*=================media queries 600px==================*/
+
+/*==========media queries 600px==================*/
 @media screen and (min-width:600px)
 {
-    .header_titre {
-        margin:auto;
-    }
-      .header__titre1 {
-        font-size:40px;
-    }
-      .container1 {
-        position: absolute;
-        top: 40%; 
-    }
-    
-    .menu h2{
-        margin-left:9%;  
-    }
-
-      .menu__h2__coeur {
-        margin-right:28%
-    }
-    .menu__ensemble_entree .menu__ensemble__intitule{
+  .header_titre {
+     margin:auto;
+  }
+  .header__titre1 {
+    font-size:40px;
+  }
+  .container1 {
+    position: absolute;
+    top: 29%; 
+  }
+  .menu1__h2__coeur, .menu1__h2__coeur1  {
+    right: 24%;
+  }
+  .menu__ensemble_entree .menu__ensemble__intitule{
     margin:auto;
     margin-left:4%
-
-    }
-      .menu__ensemble_entree, .menu__ensemble_plat, .menu__ensemble_dessert {
-        margin: 0 5% 0 5%; 
-    }
-      .groupe {
-        margin: 0 2% 0 2%; 
-        
-    }
-      .footer__p {
-        margin-left: 2%;
-    }  
+  }
+  .menu__ensemble_entree, .menu__ensemble_plat, .menu__ensemble_dessert {
+    margin: 0 5% 0 5%; 
+  }
+  .groupe {
+    margin: 0 2% 0 2%; 
+  }
+  .footer__p {
+    margin-left: 2%;
+  }  
 }
+
 /*=================media queries 900px==================*/
 @media screen and (min-width: 900px) 
 {
-    .header__titre {
-      font-size: 70px;
-       }
-       .header__retour{
-         margin-left:10%;
-       }
-       
-      .photo_photo1 {
-        width:80%;
-        height:auto;
-        margin-left:10%;
-      }
-    .container1 {
-      width:80%;
-      margin-left:10%;
-      top:20%;
-    }
-    .btn__btn2 {
-      left: 100%;
-      transform: translateX(-100%);
-      position: relative;
-      background-color:aqua;
-      width: auto;
-      border-radius: 0 12px 12px 0;
-      transition: width 2s;
-    }
+  .header__titre {
+    font-size: 70px;
+  }
+  .header__retour{
+    margin-left:10%;
+  }
+  .photo_photo1 {
+    width:80%;
+    height:auto;
+    margin-left:10%;
+  }
+  .container1 {
+    width:80%;
+    margin-left:10%;
+    top:20%;
+  }
+  .menu1__h2__trocadero {
+    margin-left: 5%;
+  }
+  .menu1__h2__coeur, .menu1__h2__coeur1 {
+    margin-right: 4%;
+  }
+  .btn__btn2 {
+    left: 100%;
+    transform: translateX(-100%);
+    position: relative;
+    background-color:aqua;
+    width: auto;
+    border-radius: 0 12px 12px 0;
+    transition: width 2s;
+  }
       
-    .btn__btn2 .fas.fa-check-circle {
-      opacity: 1;
-      color: white; 
-    }
+  .btn__btn2 .fas.fa-check-circle {
+    opacity: 1;
+    color: white; 
+  }
       
-    .btn:hover .btn__btn2 {
-      position: relative;
-      margin-left:100%;
-      background-color: aqua;
-      width: 70px;
-      border-radius: 0 12px 12px 0;
-      transition: width 2s; 
-    }
-    .btn:hover .btn__btn2 .fas.fa-check-circle {
-        opacity: 1;
-        width: 0;
-        transform: scale(1);
-        transform: rotate 360deg;
-        transition: transform 500ms; 
-    }
+  .btn:hover .btn__btn2 {
+    position: relative;
+    margin-left:100%;
+    background-color: aqua;
+    width: 70px;
+    border-radius: 0 12px 12px 0;
+    transition: width 2s; 
+  }
+  .btn:hover .btn__btn2 .fas.fa-check-circle {
+    opacity: 1;
+    width: 0;
+    transform: scale(1);
+    transform: rotate 360deg;
+    transition: transform 500ms; 
+  }
       
-    .fa-check-circle {
-      transform: scale(.1);
-      opacity: 1;
-      transform: rotate(180deg);
-      transition: transform 500ms;
-    }
-    .menu h2 {
-      margin-left: 9%;
-      font-size: 45px;
-      margin: 0 0 10% 13%; 
-    }
+  .fa-check-circle {
+    transform: scale(.1);
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: transform 500ms;
+  }
   
-    .menu__h2__coeur {
-      margin-right: 26%; 
-    }
+  .btn {
+    height: 80px; 
+  }
   
-    .btn {
-      height: 80px; 
-    }
+  h2.menu__ensemble__intitule {
+    font-size: 24px;
+    margin:4% 0 0 4%;
+  }
   
-    h2.menu__ensemble__intitule {
-      font-size: 24px;
-      margin:4% 0 0 4%;
-    }
+  .menu__ensemble_entree {
+    margin-left: 15%; 
+  }
   
-    .menu__ensemble_entree {
-      margin-left: 15%; 
-    }
+  .menu__ensemble_dessert, .menu__ensemble_plat, .menu__ensemble_entree {
+    margin: 0 10% 0 10%;
+  }
   
-    .menu__ensemble_dessert, .menu__ensemble_plat, .menu__ensemble_entree {
-      margin: 0 10% 0 10%; }
-  
-    .menu__ensemble__menu--nom {
-      font-size: 21px; 
-    } 
-  
-    .groupe {
-      margin: 0 3% 0 3%;
-      font-size: 18px; }
-  
-    .ajout {
-      height: 40px;
-      padding: 1 0 2% 0;
-      font-size: 30px; 
-    }
-  
-    .footer__p {
-      margin-left: 6%; 
-    }
-  
-    footer {
-      width: 98%;
-      margin: auto; 
-    } 
+  .menu__ensemble__menu--nom {
+    font-size: 21px; 
+  } 
+  .groupe {
+    margin: 0 3% 0 3%;
+    font-size: 18px; 
+  }
+  .ajout {
+    height: 40px;
+    padding: 1 0 2% 0;
+    font-size: 30px; 
+  }
+  .footer__p {
+    margin-left: 6%; 
+  }
+  footer {
+    width: 98%;
+    margin: auto; 
+  } 
 }
 @media screen and (min-width:1200px)
 {
@@ -877,7 +760,15 @@ footer a {
   }
   
 } 
+/*=======media queries 1366px========*/
+@media screen and (min-width:1366px) {
+  .menu1__h2__coeur, .menu1__h2__coeur1 {
+    padding-left: 25%; 
+  }
 
+  
+
+}
 /*=====================menu 3 css==================*/
 .container3 {
   position:absolute;
@@ -896,10 +787,7 @@ footer a {
     width:80%;
     margin-left:10%;
   }
-  .menu__h2__coeur {
-    margin-right:32%;
-    
-  }
+
 }
 /*=================menu4 css=============*/
 .container4 {
