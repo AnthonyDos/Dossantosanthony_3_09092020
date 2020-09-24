@@ -421,8 +421,9 @@ footer a {
 span {
   border-bottom: 2px solid #99E2D0; }
 
-.menu1__h, .menu1 h {
+.menu1__h, .menu1__h__h2 {
   display: flex;
+  font-weight: bold;
   margin-left: 3%;
   margin-right: 20%;
   height: 50px;
@@ -517,29 +518,34 @@ span {
   background-color: white;
   border: white;
   height: 60px;
-  cursor: pointer; }
+  cursor: pointer;
+  animation-duration: 3s;
+  animation-name: slide; }
 
+@keyframes slide {
+  from {
+    margin-right: 100%;
+    width: 5%; }
+  to {
+    margin-left: 0%;
+    width: 0%; } }
 .btn__btn2 {
   display: flex;
   position: relative;
   align-items: center;
   cursor: pointer;
-  margin-left: 2%;
   background-color: aqua;
   width: 0;
   border-radius: 0 12px 12px 0;
   transition: width 5s; }
 
 .btn:hover .btn__btn2 {
-  transform: animation-direction alternate-reverse;
-  width: 70px;
-  animation-name: bouton; }
+  width: 70px; }
   .btn:hover .btn__btn2 .btn__btn2--check {
     transform: rotate(360);
     animation: fa-spin 3s linear; }
 
 .btn__btn2--check {
-  left: 100%;
   transform: translate(0) rotate(360deg);
   overflow: hidden;
   font-size: 24px;
@@ -591,6 +597,10 @@ footer a {
 
 /*==========media queries 600px==================*/
 @media screen and (min-width: 600px) {
+  .menu1__h, .menu1__h__h2 {
+    margin-left: 5%;
+    height: 73px; }
+
   .header_titre {
     margin: auto; }
 
@@ -604,8 +614,7 @@ footer a {
   .menu1__h__coeur, .menu1__h__coeur1 {
     right: 24%; }
 
-  .menu__ensemble_entree .menu__ensemble__intitule {
-    margin: auto;
+  .menu__ensemble_entree .menu__ensemble__intitule, .menu__ensemble_plat .menu__ensemble__intitule, .menu__ensemble_dessert .menu__ensemble__intitule {
     margin-left: 4%; }
 
   .menu__ensemble_entree, .menu__ensemble_plat, .menu__ensemble_dessert {
@@ -634,45 +643,12 @@ footer a {
     margin-left: 10%;
     top: 20%; }
 
-  .menu1__h__trocadero {
-    margin-left: 5%; }
+  .menu__h, .menu1__h__h2 {
+    font-size: 35px;
+    margin-left: 11%; }
 
   .menu1__h__coeur, .menu1__h__coeur1 {
     margin-right: 4%; }
-
-  .btn__btn2 {
-    left: 100%;
-    transform: translateX(-100%);
-    position: relative;
-    background-color: aqua;
-    width: auto;
-    border-radius: 0 12px 12px 0;
-    transition: width 2s; }
-
-  .btn__btn2 .fas.fa-check-circle {
-    opacity: 1;
-    color: white; }
-
-  .btn:hover .btn__btn2 {
-    position: relative;
-    margin-left: 100%;
-    background-color: aqua;
-    width: 70px;
-    border-radius: 0 12px 12px 0;
-    transition: width 2s; }
-
-  .btn:hover .btn__btn2 .fas.fa-check-circle {
-    opacity: 1;
-    width: 0;
-    transform: scale(1);
-    transform: rotate 360deg;
-    transition: transform 500ms; }
-
-  .fa-check-circle {
-    transform: scale(0.1);
-    opacity: 1;
-    transform: rotate(180deg);
-    transition: transform 500ms; }
 
   .btn {
     height: 80px; }
@@ -707,41 +683,7 @@ footer a {
     margin: auto; } }
 @media screen and (min-width: 1200px) {
   .container1 {
-    top: 44%; }
-
-  .btn__btn2 {
-    left: 100%;
-    transform: translateX(-100%);
-    position: relative;
-    background-color: aqua;
-    width: auto;
-    border-radius: 0 12px 12px 0;
-    transition: width 2s; }
-
-  .btn__btn2 .fas.fa-check-circle {
-    opacity: 1;
-    color: white; }
-
-  .btn:hover .btn__btn2 {
-    position: relative;
-    margin-left: 100%;
-    background-color: aqua;
-    width: 70px;
-    border-radius: 0 12px 12px 0;
-    transition: width 2s; }
-
-  .btn:hover .btn__btn2 .fas.fa-check-circle {
-    opacity: 1;
-    width: 0;
-    transform: scale(1);
-    transform: rotate 360deg;
-    transition: transform 500ms; }
-
-  .fa-check-circle {
-    transform: scale(0.1);
-    opacity: 1;
-    transform: rotate(180deg);
-    transition: transform 500ms; } }
+    top: 44%; } }
 /*=======media queries 1366px========*/
 @media screen and (min-width: 1366px) {
   .menu1__h__coeur, .menu1__h__coeur1 {
