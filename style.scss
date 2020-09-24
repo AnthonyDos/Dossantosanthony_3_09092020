@@ -20,7 +20,7 @@ header {
   display: flex;
   width: auto;
   margin: auto; 
-}
+} 
 .container {
   @extend %flexbox;
   margin-top: 0;
@@ -80,7 +80,7 @@ h3 {
     box-shadow: 3px 3px 3px $couleurhover;
     border: solid 1px $couleurhover; 
   }
-}
+} 
 #badge1:after{
   content:"1";
   @include number_badge;
