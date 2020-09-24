@@ -424,7 +424,7 @@ span {
     border-bottom: 2px solid $tertiarycolor; 
 }
   
-.menu1__h2, .menu1 h2 {
+.menu1__h, .menu1 h {
   display:flex;
   margin-left: 3%;
   margin-right: 20%;
@@ -432,15 +432,15 @@ span {
   font-size: 28px;
   font-style: italic; 
 }
-.menu1__h2__coeur, .menu1__h2__coeur1 {
+.menu1__h__coeur, .menu1__h__coeur1 {
   position: absolute;
   right: 20%;
 }
-.menu1__h2__coeur1{
+.menu1__h__coeur1{
   opacity:0;
   color:white;
 }
-.menu1__h2__coeur1:hover{
+.menu1__h__coeur1:hover{
   cursor:pointer;
   color:#9356DC;
   animation-name: heart;
@@ -481,71 +481,68 @@ span {
   
 .menu__ensemble_entree {
     @include flexcolumn(colonne);
-    width: auto;
     transition: 5s;
         animation: slidedown 5s; 
     @include slidedown(slide);
 }
 .menu__ensemble_plat {
     @include flexcolumn(colonne);
-    width: auto;
     transition: 11s;
         animation: slidedown 11s; 
     @include slidedown(slide);
 }
 .menu__ensemble_dessert {
     @include flexcolumn(colonne);
-    width: auto;
     transition: 16s;
         animation: slidedown 16s; 
     @include slidedown(slide);
 }
 .btn {
-    @include marge_text_bordure(reglage);
-} 
-
-.btn__btn2 {	
-	background-color:aqua;
-	width: 0;
-	border-radius: 0 12px 12px 0;
-  transition: width 2s;
-}
+  @include marge_text_bordure(reglage);   
+  cursor: pointer;
   
-.btn__btn2 .fas.fa-check-circle {
-	opacity: 0;
-  color: white; 
+} 
+.btn__btn2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 2%;
+  background-color: aqua;
+  width: 0;
+  border-radius: 0 12px 12px 0;
+  transition: width 5s;
+  
+  
+  
+}
+.btn:hover {
+  & .btn__btn2{
+    transform: animation-direction alternate-reverse; 
+    width: 70px;
+    animation-name: bouton;
+    & .btn__btn2--check {
+    transform:  rotate(360);
+    animation: fa-spin 3s linear ;
+    
+    }
+  }
 }
 
-.btn:hover .btn__btn2 {
-
-	margin-left: 2%;
-	background-color: aqua;
-	width: 70px;
-	border-radius: 0 12px 12px 0;
-  transition: width 2s; 
-}
-.btn:hover .btn__btn2 .fas.fa-check-circle {
-    opacity: 1;
-    width: 0;
-	  transform: scale(1);
-	  transform: rotate 360deg;
-    transition: transform 500ms; 
+.btn__btn2--check{
+  left: 100%;
+  transform: translate(0)rotate(360deg);
+  overflow: hidden;
+  font-size: 24px;
+  color: white;
+  margin: auto;
+  
 }
 
-.fa-check-circle {
-	transform: scale(.1);
-	opacity: 1;
-	transform: rotate(180deg);
-  transition: transform 500ms;
-  font-size: 25px;
-  padding-top:18px;
-  width:0;
-}
-
-.menu__ensemble__menu--nom  {
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 0; 
+.menu__ensemble__menu--nom {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 0; 
 }
   
 .groupe {
@@ -609,7 +606,7 @@ footer a {
     position: absolute;
     top: 29%; 
   }
-  .menu1__h2__coeur, .menu1__h2__coeur1  {
+  .menu1__h__coeur, .menu1__h__coeur1  {
     right: 24%;
   }
   .menu__ensemble_entree .menu__ensemble__intitule{
@@ -646,10 +643,10 @@ footer a {
     margin-left:10%;
     top:20%;
   }
-  .menu1__h2__trocadero {
+  .menu1__h__trocadero {
     margin-left: 5%;
   }
-  .menu1__h2__coeur, .menu1__h2__coeur1 {
+  .menu1__h__coeur, .menu1__h__coeur1 {
     margin-right: 4%;
   }
   .btn__btn2 {
@@ -773,7 +770,7 @@ footer a {
 } 
 /*=======media queries 1366px========*/
 @media screen and (min-width:1366px) {
-  .menu1__h2__coeur, .menu1__h2__coeur1 {
+  .menu1__h__coeur, .menu1__h__coeur1 {
     padding-left: 25%; 
   }
 }
