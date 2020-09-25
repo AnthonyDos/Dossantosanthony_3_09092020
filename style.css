@@ -145,10 +145,11 @@ h3 {
   font-size: 1em; }
 
 #restaurant__btn li:hover {
-  background: #B39DDB; }
+  background: linear-gradient(to top left, #b452c5, #e7c1ee);
+  box-shadow: 4px 4px 4px #B39DDB; }
 
 #restaurant__btn li li:hover {
-  background: #999; }
+  background: linear-gradient(to top left, #b452c5, #e7c1ee); }
 
 #restaurant__btn ul li:last-child {
   border-radius: 0 0 25px 25px;
@@ -176,7 +177,8 @@ h3 {
   background-color: white;
   border-radius: 15px;
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-bottom: 4%; }
 
 .plat {
   height: auto;
@@ -513,7 +515,7 @@ span {
   animation-duration: 3s;
   animation-name: slide; }
 
-.btn__btn2 {
+.btn .btn__btn2 {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -558,9 +560,14 @@ span {
   text-align: center;
   margin: 4% 30% 4% 30%;
   padding: 2% 0 2% 0;
-  background-color: #9356DC;
+  background: linear-gradient(to top left, #AB47BC, #E1BEE7);
   border: #9356DC;
-  color: white; }
+  color: white;
+  box-shadow: 3px 3px 3px #B39DDB; }
+
+.ajout:hover {
+  background: linear-gradient(to top left, #b452c5, #e7c1ee);
+  box-shadow: 4px 4px 4px #B39DDB; }
 
 /*=========partie footer================*/
 footer {

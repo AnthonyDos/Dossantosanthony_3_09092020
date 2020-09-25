@@ -118,15 +118,17 @@ h3 {
   font-family: roboto;
   font-weight: bold;
   font-size: 1.5em; 
+  
 }
 #restaurant__btn ul li a, #restaurant__btn li:hover li a {
   font-size: 1em; 
 }
 #restaurant__btn li:hover {
-  background: #B39DDB; 
+  background: linear-gradient(to top left, #b452c5,#e7c1ee);
+  box-shadow: 4px 4px 4px $couleurhover; 
 }
 #restaurant__btn li li:hover {
-  background: #999; 
+  background: linear-gradient(to top left, #b452c5,#e7c1ee); 
 }
 #restaurant__btn ul li:last-child {
   border-radius: 0 0 25px 25px;
@@ -158,6 +160,7 @@ h3 {
   border-radius: 15px;
   margin-left: 10px;
   margin-right: 10px; 
+  margin-bottom: 4%;
 }
 
 .plat {
@@ -507,11 +510,9 @@ span {
   @include marge_text_bordure(reglage);   
   cursor: pointer;
   animation-duration: 3s;
-  animation-name: slide;
-   
+  animation-name: slide;  
 } 
-
-.btn__btn2 {
+.btn .btn__btn2 {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -520,6 +521,7 @@ span {
   border-radius: 0 12px 12px 0;
   transition: width 5s; 
 }
+
 .btn__btn2--check{
   transform: translate(0)rotate(360deg);
   overflow: hidden;
@@ -568,9 +570,14 @@ span {
     text-align: center;
     margin: 4% 30% 4% 30%;
     padding: 2% 0 2% 0;
-    background-color: #9356DC;
+    background: linear-gradient(to top left, #AB47BC,#E1BEE7);
     border: #9356DC;
     color: white; 
+    box-shadow: 3px 3px 3px $couleurhover;
+}
+.ajout:hover {
+  background: linear-gradient(to top left, #b452c5,#e7c1ee);
+  box-shadow: 4px 4px 4px $couleurhover;
 }
   
   /*=========partie footer================*/
