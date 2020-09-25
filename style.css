@@ -117,7 +117,7 @@ h3 {
   border: 1px solid #9356DC; }
 
 #restaurant__btn li {
-  background-color: #9356DC;
+  background: linear-gradient(to top left, #AB47BC, #E1BEE7);
   border-radius: 25px;
   box-shadow: 3px 3px 3px #B39DDB;
   border: solid 1px #B39DDB; }
@@ -356,35 +356,24 @@ footer a {
     width: 70%;
     font-size: 20px; }
 
-  /*
-  .progress {
-    &__bar {
-        animation: progress-bar 1000ms;
-    }
-  }
-  
-  @keyframes progress-bar{
+  .progress__bar {
+    animation: progress-bar 1000ms;
+    animation-duration: 3s; }
+
+  @keyframes progress-bar {
     0% {
-        transform: scaleX(0);
-        opacity: .1;
-    }
+      transform: scaleX(0);
+      opacity: .1; }
     17% {
-        transform: scaleX(.18);
-    }
+      transform: scaleX(0.18); }
     24% {
-        transform: scaleX(.4);
-    }
+      transform: scaleX(0.4); }
     46% {
-        transform: scaleX(.81);
-    }
-    85%,100% {
-        opacity: 1;
-    }
+      transform: scaleX(0.81); }
+    85% {
+      opacity: 1; }
     100% {
-        transform: scaleX(1);
-    }
-  }
-  */
+      transform: scaleX(1); } }
   footer {
     width: 80%;
     margin-left: 10%; } }
@@ -464,6 +453,8 @@ span {
   height: auto; }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   background-color: #F5F5F5;
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -522,28 +513,14 @@ span {
   animation-duration: 3s;
   animation-name: slide; }
 
-@keyframes slide {
-  from {
-    margin-right: 100%;
-    width: 5%; }
-  to {
-    margin-left: 0%;
-    width: 0%; } }
 .btn__btn2 {
   display: flex;
-  position: relative;
   align-items: center;
   cursor: pointer;
   background-color: aqua;
   width: 0;
   border-radius: 0 12px 12px 0;
   transition: width 5s; }
-
-.btn:hover .btn__btn2 {
-  width: 70px; }
-  .btn:hover .btn__btn2 .btn__btn2--check {
-    transform: rotate(360);
-    animation: fa-spin 3s linear; }
 
 .btn__btn2--check {
   transform: translate(0) rotate(360deg);
@@ -552,12 +529,19 @@ span {
   color: white;
   margin: auto; }
 
+.btn:hover .btn__btn2 {
+  width: 70px; }
+  .btn:hover .btn__btn2 .btn__btn2--check {
+    transform: rotate(360);
+    animation: fa-spin 3s linear; }
+
 .menu__ensemble__menu--nom {
   font-weight: bold;
   font-size: 15px;
   line-height: 0; }
 
 .groupe {
+  justify-content: space-between;
   line-height: 1px;
   padding-left: 2%;
   width: 100%; }

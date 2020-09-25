@@ -94,7 +94,7 @@ h3 {
   @include number_badge;
 }
 #restaurant__btn li {
-  background-color:$primarycolor;
+  background: linear-gradient(to top left, #AB47BC,#E1BEE7);
   border-radius: 25px;
   box-shadow: 3px 3px 3px $couleurhover;
   border: solid 1px $couleurhover; 
@@ -146,6 +146,7 @@ h3 {
   background-color:$bouttonselection;
   margin-top: auto; 
 }
+
 .menu {
   width: 100%;
   text-align: start;
@@ -158,6 +159,7 @@ h3 {
   margin-left: 10px;
   margin-right: 10px; 
 }
+
 .plat {
   height: auto;
   width: 100%; 
@@ -344,10 +346,11 @@ h1 {
     width:70%;
     font-size:20px; 
 }
-/*
+
 .progress {
   &__bar {
       animation: progress-bar 1000ms;
+      animation-duration: 3s;
   }
 }
 
@@ -365,14 +368,14 @@ h1 {
   46% {
       transform: scaleX(.81);
   }
-  85%,100% {
+  85% {
       opacity: 1;
   }
   100% {
       transform: scaleX(1);
   }
 }
-*/
+
 footer {
     @include marge-container
   }
@@ -394,7 +397,7 @@ footer {
 body, .container, .restaurant, footer, .container1 , .menud, footer {
     @extend %flexbox; 
 }
-  
+
   /*======================partie header==================*/
 .header_titre {
     width:100%;
@@ -473,6 +476,8 @@ span {
 }
    
 .menu {
+    display: flex;
+    flex-direction: column;
     background-color: #F5F5F5;
     width: 100%;
     border-radius: 20px 20px 0 0;
@@ -503,21 +508,11 @@ span {
   cursor: pointer;
   animation-duration: 3s;
   animation-name: slide;
+   
 } 
-@keyframes slide {
-  from {
-    margin-right: 100%;
-    width: 5%; 
-  }
 
-  to {
-    margin-left: 0%;
-    width: 0%;
-  }
-}
 .btn__btn2 {
   display: flex;
-  position: relative;
   align-items: center;
   cursor: pointer;
   background-color: aqua;
@@ -525,6 +520,14 @@ span {
   border-radius: 0 12px 12px 0;
   transition: width 5s; 
 }
+.btn__btn2--check{
+  transform: translate(0)rotate(360deg);
+  overflow: hidden;
+  font-size: 24px;
+  color: white;
+  margin: auto;  
+}
+
 .btn:hover {
   & .btn__btn2{ 
     width: 70px;
@@ -535,13 +538,7 @@ span {
   }
 }
 
-.btn__btn2--check{
-  transform: translate(0)rotate(360deg);
-  overflow: hidden;
-  font-size: 24px;
-  color: white;
-  margin: auto;  
-}
+
 
 .menu__ensemble__menu--nom {
   font-weight: bold;
@@ -550,6 +547,7 @@ span {
 }
   
 .groupe {
+    justify-content: space-between;
     line-height: 1px;
     padding-left: 2%; 
     width: 100%;
