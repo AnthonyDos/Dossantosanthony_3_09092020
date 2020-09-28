@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch C:/Users/dossa/Documents/ProjetOpenclassrooms/projet3_animer_en_css/style.scss:C:/Users/dossa/Documents/ProjetOpenclassrooms/projet3_animer_en_css/style.css",
-    "prefix": "postcss C:/Users/dossa/Documents/ProjetOpenclassrooms/projet3_animer_en_css/style.css --useautoprefixer C:/Users/dossa/Documents/ProjetOpenclassrooms/projet3_animer_en_css"
+    "prefix": "postcss C:/Users/dossa/Documents/ProjetOpenclassrooms/projet3_animer_en_css/style.css --use autoprefixer -d C:/Users/dossa/Documents/ProjetOpenclassrooms/projet3_animer_en_css/prefixed/"
   },
   "repository": {
     "type": "git",
