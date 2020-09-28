@@ -85,21 +85,13 @@ header {
   display: flex;
   width: auto;
   margin: auto; 
+  height: 66px;
 } 
 .container {
   @extend %flexbox;
   margin-top: 0;
   background-color: white; 
 }
-h1 {
-  font-family: 'Shrikhand','cursive';
-  width: auto;
-  font-style: italic;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px; 
-}
-
 .restaurant h2 {
   font-family: 'shrikhand', cursive;
   text-align: center;
@@ -230,6 +222,7 @@ h3 {
 .plat {
   height: auto;
   width: 100%; 
+  max-height: 200px;
   border-radius: 15px 15px 0px 0px; 
 }
 .plat1 {
@@ -316,85 +309,94 @@ footer a {
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px)
 {
-    h1 {
-        font-size: 60px;
-    }
-    .news {
-      right:12%;
-    }
-    .plat1__coeur, .plat1__coeur2 {
-      position: absolute;
-      right: 20%;
-    }
-    #restaurant__btn  {
-        width:30%;
-        margin-left:auto;
-        margin-right:25%;
-        padding-bottom:5%;
-    }
-    .choix {
-        margin:auto;
-    }
-    #badge1:after, #badge2:after, #badge3:after{
-      @include number_badge_600px;
-    }
-    .menu h2 {
-        margin-left: 10%;
-    }   
-    .choix__button {
-        padding-top: 3%;
-    }
-    .menu__menu1 {
-        width: 80%;
-        margin: auto;
+  .logo {
+    height: auto;
+  }
+  .news {
+    right:12%;
+  }
+  .plat {
+   max-height: 200px;
+  }
+  .plat1__coeur, .plat1__coeur2 {
+    position: absolute;
+    right: 20%;
+  }
+  #restaurant__btn  {
+    width:30%;
+    margin-left:auto;
+    margin-right:25%;
+    padding-bottom:5%;
+  }
+  .choix {
+    margin:auto;
+  }
+   #badge1:after, #badge2:after, #badge3:after{
+    @include number_badge_600px;
+  }
+  .menu h2 {
+    margin-left: 10%;
+  }   
+  .choix__button {
+    padding-top: 3%;
+  }
+  .menu__menu1 {
+    width: 80%;
+    margin: auto;
   }
 }
 
  /*=====media queries min-width:900px page index=======*/
 @media screen and (min-width: 900px)
 {
-h1 { 
-    font-size: 90px; 
-}
-.news {
-  right:19%;
-}
-.plat1__coeur, .plat1__coeur2 {
-  position: absolute;
-  right: 20%;
-}
-#badge1:after,#badge2:after, #badge3:after {
-  @include number_badge_900px;
-}
-.container {
-    @include marge-container;
-}
-.choix {
-    margin:auto;
+  .logo {
+    height: auto;
   }
-.restaurant h2{
-    font-size:22px
-}
-#restaurant__btn a {
-    font-size:1.3rem
-}
-.choix h2{
-    margin-left:10%;
-}
-.choix__button{
-    width:70%;
-    font-size:20px; 
-}
-footer {
-    @include marge-container
+  .news {
+    right:19%;
   }
+  .plat {
+    max-height: 400px;
+  }
+  .plat1__coeur, .plat1__coeur2 {
+    position: absolute;
+    right: 20%;
+  }
+  #badge1:after,#badge2:after, #badge3:after {
+    @include number_badge_900px;
+  }
+  .container {
+      @include marge-container;
+  }
+  .choix {
+      margin:auto;
+    }
+  .restaurant h2{
+      font-size:22px
+  }
+  #restaurant__btn a {
+      font-size:1.3rem
+  }
+  .choix h2{
+      margin-left:10%;
+  }
+  .choix__button{
+      width:70%;
+      font-size:20px; 
+  }
+  footer {
+      @include marge-container
+    }
 } 
 
 /*=====media queries min-width:1200px page index=======*/
 @media screen and (min-width:1200px)
  {
-  h1 {
-     font-size: 90px;
+  .logo {
+    height: auto;
+  }
+  .plat {
+    max-height: 500px;
   }
   .news {
      right:19%;
@@ -420,17 +422,7 @@ body, .container, .restaurant, footer, .container1 , .menud, footer {
     font-size: 30px;
     color: black; 
 }
-  
-.header__titre1 {
-    margin: auto;
-    text-align: center;
-    font-family: 'Shrikhand','cursive';
-    font-style: italic;
-    font-weight: bold;
-    width: 100%;
-    font-size: 30px; 
-} 
-  
+ 
   /*=====================partie centrale de la page========================*/
 span {
     border-bottom: 2px solid $tertiarycolor; 

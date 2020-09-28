@@ -79,19 +79,12 @@ body {
 header {
   display: flex;
   width: auto;
-  margin: auto; }
+  margin: auto;
+  height: 66px; }
 
 .container {
   margin-top: 0;
   background-color: white; }
-
-h1 {
-  font-family: 'Shrikhand','cursive';
-  width: auto;
-  font-style: italic;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px; }
 
 .restaurant h2 {
   font-family: 'shrikhand', cursive;
@@ -245,6 +238,7 @@ h3 {
 .plat {
   height: auto;
   width: 100%;
+  max-height: 200px;
   border-radius: 15px 15px 0px 0px; }
 
 .plat1 {
@@ -331,11 +325,14 @@ footer a {
 
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px) {
-  h1 {
-    font-size: 60px; }
+  .logo {
+    height: auto; }
 
   .news {
     right: 12%; }
+
+  .plat {
+    max-height: 200px; }
 
   .plat1__coeur, .plat1__coeur2 {
     position: absolute;
@@ -365,11 +362,14 @@ footer a {
     margin: auto; } }
 /*=====media queries min-width:900px page index=======*/
 @media screen and (min-width: 900px) {
-  h1 {
-    font-size: 90px; }
+  .logo {
+    height: auto; }
 
   .news {
     right: 19%; }
+
+  .plat {
+    max-height: 400px; }
 
   .plat1__coeur, .plat1__coeur2 {
     position: absolute;
@@ -404,8 +404,11 @@ footer a {
     margin-left: 10%; } }
 /*=====media queries min-width:1200px page index=======*/
 @media screen and (min-width: 1200px) {
-  h1 {
-    font-size: 90px; }
+  .logo {
+    height: auto; }
+
+  .plat {
+    max-height: 500px; }
 
   .news {
     right: 19%; } }
@@ -421,15 +424,6 @@ footer a {
   margin-left: 2%;
   font-size: 30px;
   color: black; }
-
-.header__titre1 {
-  margin: auto;
-  text-align: center;
-  font-family: 'Shrikhand','cursive';
-  font-style: italic;
-  font-weight: bold;
-  width: 100%;
-  font-size: 30px; }
 
 /*=====================partie centrale de la page========================*/
 span {
