@@ -218,21 +218,6 @@ h3 {
   background-color: #E0E0E0;
   border-top: 2px solid #BDBDBD; 
 }
-
-$cd-bars: #15DEA5;
-$size: 3vh;
-
-.load {
-    width: 150*10;
-    height: 150*7.5;
-    display: flex;
-    justify-content: space-evenly;
-    &__bar {
-        background-color: #15DEA5;
-        height: 100%;
-        width: $size;
-    }
-}
 .identite {
   text-align: justify;
   width: 94%;
@@ -534,7 +519,7 @@ span {
   & .btn__btn2{ 
     width: 70px;
     & .btn__btn2--check {
-    transform:  rotate(360);
+    transform:  rotate(360deg);
     animation: fa-spin 3s linear ;
     }
   }
@@ -690,7 +675,7 @@ footer a {
   }
   .ajout {
     height: 40px;
-    padding: 1 0 2% 0;
+    padding: 1% 0 2% 0;
     font-size: 30px; 
   }
   .footer__p {

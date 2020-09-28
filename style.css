@@ -239,16 +239,6 @@ h3 {
   background-color: #E0E0E0;
   border-top: 2px solid #BDBDBD; }
 
-.load {
-  width: 1500;
-  height: 1125;
-  display: flex;
-  justify-content: space-evenly; }
-  .load__bar {
-    background-color: #15DEA5;
-    height: 100%;
-    width: 3vh; }
-
 .identite {
   text-align: justify;
   width: 94%;
@@ -534,7 +524,7 @@ span {
 .btn:hover .btn__btn2 {
   width: 70px; }
   .btn:hover .btn__btn2 .btn__btn2--check {
-    transform: rotate(360);
+    transform: rotate(360deg);
     animation: fa-spin 3s linear; }
 
 .menu__ensemble__menu--nom {
@@ -663,7 +653,7 @@ footer a {
 
   .ajout {
     height: 40px;
-    padding: 1 0 2% 0;
+    padding: 1% 0 2% 0;
     font-size: 30px; }
 
   .footer__p {
