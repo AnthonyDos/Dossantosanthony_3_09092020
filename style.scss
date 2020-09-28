@@ -16,6 +16,71 @@ body {
   padding: 0;
   margin: 0;
 }
+/*==============loader spinner=========================*/
+.load{
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-name:load;
+}
+@keyframes load{
+  0% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.loader { 
+	position: absolute;
+	top:100%;
+	left: 40%;
+	@include load_spinner;
+	width: $size*10;
+	height: $size*7.5;
+	display: flex;
+	justify-content: space-evenly;
+	transition-property:all;
+  transition-delay: 5s;
+  
+	&__bar {
+		background-color: $cd-bars;
+		height: 100%;
+		width: $size;
+		background-color: $cd-bars;
+		animation: bars $anim-dur backwards infinite ease-in-out alternate;
+		animation-direction: alternate;
+    @for $i from 1 through $num-bars {
+      &--#{$i} {
+				animation-delay: $anim-delay * $i;
+			}        
+    }  
+	}
+}
+
+@keyframes bars {
+	0%{
+		transform: scaleY(0.5);
+	}
+	100% {
+		transform: scaleY(1.0);
+	}
+}
+.loader__bar--1 {
+    animation-delay: 200ms;
+}
+.loader__bar--2 {
+    animation-delay: 400ms;
+}
+.loader__bar--3 {
+    animation-delay: 600ms;
+}
+.loader__bar--4 {
+    animation-delay: 800ms;
+}
+.loader__bar--5 {
+    animation-delay: 1000ms;
+}
+/*=================fin loader spinner=================*/
 header {
   display: flex;
   width: auto;
