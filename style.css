@@ -66,7 +66,6 @@ h3 {
   text-align: center;
   width: 60%;
   font-size: 8px;
-  padding: 0 10% 10% 20%;
   padding: 0 10% 10% 20%; }
   #restaurant__btn li {
     background-color: #9356DC;
@@ -275,11 +274,7 @@ footer a {
   .news {
     right: 12%; }
 
-  .plat1__coeur {
-    position: absolute;
-    right: 20%; }
-
-  .plat1__coeur2 {
+  .plat1__coeur, .plat1__coeur2 {
     position: absolute;
     right: 20%; }
 
@@ -313,11 +308,7 @@ footer a {
   .news {
     right: 19%; }
 
-  .plat1__coeur {
-    position: absolute;
-    right: 20%; }
-
-  .plat1__coeur2 {
+  .plat1__coeur, .plat1__coeur2 {
     position: absolute;
     right: 20%; }
 
@@ -338,9 +329,6 @@ footer a {
   #restaurant__btn a {
     font-size: 1.3rem; }
 
-  .choix {
-    margin: auto; }
-
   .choix h2 {
     margin-left: 10%; }
 
@@ -348,24 +336,6 @@ footer a {
     width: 70%;
     font-size: 20px; }
 
-  .progress__bar {
-    animation: progress-bar 1000ms;
-    animation-duration: 3s; }
-
-  @keyframes progress-bar {
-    0% {
-      transform: scaleX(0);
-      opacity: .1; }
-    17% {
-      transform: scaleX(0.18); }
-    24% {
-      transform: scaleX(0.4); }
-    46% {
-      transform: scaleX(0.81); }
-    85% {
-      opacity: 1; }
-    100% {
-      transform: scaleX(1); } }
   footer {
     width: 80%;
     margin-left: 10%; } }
