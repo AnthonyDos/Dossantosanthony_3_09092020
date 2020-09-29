@@ -411,18 +411,19 @@ body, .container, .restaurant, footer, .container1 , .menud, footer {
 
   /*======================partie header==================*/
 .header_titre {
-    width:100%;
-    display: flex;
-    justify-content:space-between; 
+width:100%;
+display: flex; 
 }
   
 .header__retour {
-    margin: auto;
-    margin-left:2%;
-    font-size: 30px;
-    color: black; 
+  margin-left:2%;
+  margin-top:4%;
+  font-size: 30px;
+  color: black; 
 }
- 
+.img.logo {
+  margin-left: 50%;
+}
   /*=====================partie centrale de la page========================*/
 span {
     border-bottom: 2px solid $tertiarycolor; 
@@ -705,14 +706,11 @@ footer a {
     top:44%
   } 
 } 
-<<<<<<< HEAD
+
 /*=======media queries 1366px========*/
 @media screen and (min-width:1366px) {
-  .menu1__h__coeur, .menu1__h__coeur1 {
+  .menu1__h__coeur, .menu1__h__coeur1 
+  {
     padding-left: 25%; 
   }
 }
-=======
-
-/*=====================menu 2 css==================*/
->>>>>>> parent of 560fd5b... modif class container menu 3 + modif du top
