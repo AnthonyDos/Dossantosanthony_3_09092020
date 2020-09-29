@@ -428,7 +428,11 @@ display: flex;
 span {
     border-bottom: 2px solid $tertiarycolor; 
 }
-  
+.container1  {
+  position: absolute;
+  top:18%;
+  width: 100%;
+}  
 .menu1__h, .menu1__h__h2 {
   display:flex;
   font-weight: bold;
@@ -464,14 +468,7 @@ span {
     font-weight: normal;
     margin-left: 4%;
     font-size: 18px; 
-}
-  
-.container1  {
-    position: absolute;
-    top:21%;
-    width: 100%;
-}
-   
+}  
 .photo_photo1 {
     width: 100%;
     height:auto;  
