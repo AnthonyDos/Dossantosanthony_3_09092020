@@ -79,7 +79,8 @@ body {
 header {
   display: flex;
   width: auto;
-  margin: auto;
+  margin: 0;
+  justify-content: center;
   height: 66px; }
 
 .container {
@@ -415,17 +416,15 @@ footer a {
 /*============================feuille de style des pages menus===================================*/
 /*======================partie header==================*/
 .header_titre {
-  width: 100%;
-  display: flex; }
+  display: flex;
+  justify-content: space-around;
+  height: 66px; }
 
 .header__retour {
-  margin-left: 2%;
-  margin-top: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 30px;
   color: black; }
-
-.img.logo {
-  margin-left: 50%; }
 
 /*=====================partie centrale de la page========================*/
 span {
@@ -611,11 +610,14 @@ footer a {
     margin-left: 5%;
     height: 73px; }
 
-  .header_titre {
-    margin: auto; }
+  header.header_titre {
+    margin-right: 34%; }
 
   .header__titre1 {
     font-size: 40px; }
+
+  img.logo {
+    padding-left: 32%; }
 
   .container1 {
     position: absolute;
@@ -642,6 +644,9 @@ footer a {
 
   .header__retour {
     margin-left: 10%; }
+
+  img.logo {
+    padding-left: 54%; }
 
   .photo_photo1 {
     width: 80%;

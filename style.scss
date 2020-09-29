@@ -84,7 +84,8 @@ body {
 header {
   display: flex;
   width: auto;
-  margin: auto; 
+  margin: 0;
+  justify-content: center; 
   height: 66px;
 } 
 .container {
@@ -411,18 +412,16 @@ body, .container, .restaurant, footer, .container1 , .menud, footer {
 
   /*======================partie header==================*/
 .header_titre {
-width:100%;
-display: flex; 
+display: flex;
+justify-content: space-around; 
+height: 66px;
 }
   
 .header__retour {
-  margin-left:2%;
-  margin-top:4%;
+  margin-top:auto;
+  margin-bottom: auto;
   font-size: 30px;
   color: black; 
-}
-.img.logo { 
-  margin-left: 50%;
 }
   /*=====================partie centrale de la page========================*/
 span {
@@ -535,9 +534,6 @@ span {
     }
   }
 }
-
-
-
 .menu__ensemble__menu--nom {
   font-weight: bold;
   font-size: 15px;
@@ -552,24 +548,23 @@ span {
 }
   
 .menu__ensemble__textprix  {
-    @extend %space-between;
-    margin-right: 20%; 
+  @extend %space-between;
+  margin-right: 20%; 
 }
   
 .prix {
-    font-weight: bold; 
-}
-  
+  font-weight: bold; 
+} 
 .ajout {
-    border-radius: 25px;
-    font-size: 20px;
-    text-align: center;
-    margin: 4% 30% 4% 30%;
-    padding: 2% 0 2% 0;
-    background: linear-gradient(to top left, #AB47BC,#E1BEE7);
-    border: #9356DC;
-    color: white; 
-    box-shadow: 3px 3px 3px $couleurhover;
+  border-radius: 25px;
+  font-size: 20px;
+  text-align: center;
+  margin: 4% 30% 4% 30%;
+  padding: 2% 0 2% 0;
+  background: linear-gradient(to top left, #AB47BC,#E1BEE7);
+  border: #9356DC;
+  color: white; 
+  box-shadow: 3px 3px 3px $couleurhover;
 }
 .ajout:hover {
   background: linear-gradient(to top left, #b452c5,#e7c1ee);
@@ -604,13 +599,15 @@ footer a {
   .menu1__h, .menu1__h__h2 {
     margin-left: 5%;
     height: 73px;
-   
   }
-  .header_titre {
-     margin:auto;
+  header.header_titre {
+    margin-right: 34%;
   }
   .header__titre1 {
     font-size:40px;
+  }
+  img.logo{
+    padding-left: 32%;
   }
   .container1 {
     position: absolute;
@@ -639,8 +636,11 @@ footer a {
   .header__titre {
     font-size: 70px;
   }
-  .header__retour{
-    margin-left:10%;
+  .header__retour {
+    margin-left: 10%;
+  }
+  img.logo {
+    padding-left: 54%;
   }
   .photo_photo1 {
     width:80%;
