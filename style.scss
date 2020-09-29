@@ -310,7 +310,7 @@ footer a {
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px)
 {
-  .logo {
+  .logo_h1 {
     height: auto;
   }
   .news {
@@ -385,6 +385,18 @@ footer a {
       width:70%;
       font-size:20px; 
   }
+  .menu h2 {
+    margin-left: 21%;
+  }
+  .menu__menu1 {
+    width: 60%;
+  }
+  .news{
+    right: 28%;
+  }
+  .plat1__coeur, .plat1__coeur2 {
+    right: 29%;
+  }
   footer {
       @include marge-container
     }
@@ -400,7 +412,7 @@ footer a {
     max-height: 500px;
   }
   .news {
-     right:19%;
+     right:28%;
   }
 }
  
@@ -611,7 +623,7 @@ footer a {
   }
   .container1 {
     position: absolute;
-    top: 29%; 
+    top: 32%; 
   }
   .menu1__h__coeur, .menu1__h__coeur1  {
     right: 24%;
@@ -650,7 +662,7 @@ footer a {
   .container1 {
     width:80%;
     margin-left:10%;
-    top:20%;
+    top:39%;
   }
   .menu__h, .menu1__h__h2 {
     font-size: 35px;
@@ -660,7 +672,7 @@ footer a {
     margin-right: 4%;
   }
   
-  .btn {
+  .btn { 
     height: 80px; 
   }
   
