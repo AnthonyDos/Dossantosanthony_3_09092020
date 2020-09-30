@@ -249,6 +249,16 @@ h3 {
   padding-right: 3%;
   margin-bottom: 5%; }
 
+.plat1__paragraphe a {
+  padding-bottom: 5px;
+  text-decoration: none; }
+
+.plat1__paragraphe--texte {
+  font-size: 14px; }
+
+.plat1__paragraphe--titre {
+  font-weight: bold; }
+
 .news {
   position: absolute;
   padding: 5px 22px;
@@ -284,10 +294,6 @@ h3 {
     opacity: 0; }
   100% {
     opacity: 1; } }
-.plat1__paragraphe a {
-  padding-bottom: 5px;
-  text-decoration: none; }
-
 .restaurant__position {
   width: 100%;
   padding-top: 4px;
@@ -540,14 +546,17 @@ span {
   width: 10em;
   background: white; }
 
-h3 {
+.titre_texte {
   text-align: start; }
 
-.groupe__btn--text, h3 {
+.groupe__btn--text, .titre_texte {
   margin-left: 4%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+.titre_texte {
+  font-weight: bold; }
 
 .text {
   display: flex;
@@ -563,16 +572,16 @@ h3 {
   margin: auto;
   border-radius: 50%;
   color: white;
+  font-size: 30px;
   transition: transform 1s;
   transform: rotate(180deg); }
 
 .btn {
   display: flex;
-  width: 80%;
-  margin: auto;
-  border: 1px solid white;
+  margin: 2% 2% 2% 2%;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 95%; }
   .btn:hover > .box {
     width: 5em; }
     .btn:hover > .box .check {
@@ -582,7 +591,8 @@ h3 {
   margin-right: 20%; }
 
 .prix {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-right: 19%; }
 
 .ajout {
   border-radius: 25px;
@@ -633,7 +643,7 @@ footer a {
 
   .container1 {
     position: absolute;
-    top: 32%; }
+    top: 33%; }
 
   .menu1__h__coeur, .menu1__h__coeur1 {
     right: 24%; }
@@ -677,9 +687,6 @@ footer a {
   .menu1__h__coeur, .menu1__h__coeur1 {
     margin-right: 4%; }
 
-  .btn {
-    height: 80px; }
-
   h2.menu__ensemble__intitule {
     font-size: 24px;
     margin: 4% 0 0 4%; }
@@ -692,10 +699,6 @@ footer a {
 
   .menu__ensemble__menu--nom {
     font-size: 21px; }
-
-  .groupe {
-    margin: 0 3% 0 3%;
-    font-size: 18px; }
 
   .ajout {
     height: 40px;
