@@ -514,56 +514,62 @@ span {
     @include slidedown(slide);
 }
 .btn {
-  @include marge_text_bordure(reglage);   
-  cursor: pointer;
-  animation-duration: 3s;
-  animation-name: slide;  
-} 
-.btn .btn__btn2 {
+	border-radius: 15px;
+}
+.groupe__btn {
+	flex-grow: 1;
+	width: 10em;
+	background:white;
+}	
+h3 {
+  text-align: start;
+}   
+.groupe__btn--text,h3 {
+  margin-left: 4%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.text {
   display: flex;
-  align-items: center;
-  cursor: pointer;
-  background-color: aqua;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
   width: 0;
-  border-radius: 0 12px 12px 0;
-  transition: width 5s; 
+  transition: all 1s;
+  background-color: cyan;
+}  
+.check {
+	margin: auto;
+	border-radius: 50%;
+	color: white;
+	transition: transform 1s;
+	transform: rotate(180deg);
 }
 
-.btn__btn2--check{
-  transform: translate(0)rotate(360deg);
+   
+.btn {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  border: 1px solid white;
   overflow: hidden;
-  font-size: 24px;
-  color: white;
-  margin: auto;  
-}
-
-.btn:hover {
-  & .btn__btn2{ 
-    width: 70px;
-    & .btn__btn2--check {
-    transform:  rotate(360deg);
-    animation: fa-spin 3s linear ;
+	cursor: pointer;
+   
+	&:hover > .box {
+	  width: 5em;
+	  .check {
+		  transform: rotate(0deg);
     }
   }
 }
-.menu__ensemble__menu--nom {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 0; 
-}
-  
-.groupe {
-    justify-content: space-between;
-    line-height: 1px;
-    padding-left: 2%; 
-    width: 100%;
-}
-  
+
 .menu__ensemble__textprix  {
   @extend %space-between;
-  margin-right: 20%; 
+  margin-right: 20%;
 }
-  
 .prix {
   font-weight: bold; 
 } 
