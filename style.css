@@ -462,6 +462,7 @@ span {
 .menu1__h, .menu1__h__h2 {
   display: flex;
   font-weight: bold;
+  width: 100%;
   margin-left: 3%;
   margin-right: 20%;
   height: 50px;
