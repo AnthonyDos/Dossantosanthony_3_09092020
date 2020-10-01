@@ -626,6 +626,10 @@ footer a {
   text-decoration: none;
   color: white; }
 
+/*=========media queries 500px================*/
+@media screen and (min-width: 500px) {
+  .container1 {
+    top: 28%; } }
 /*==========media queries 600px==================*/
 @media screen and (min-width: 600px) {
   .menu1__h, .menu1__h__h2 {
@@ -718,5 +722,13 @@ footer a {
 @media screen and (min-width: 1366px) {
   .menu1__h__coeur, .menu1__h__coeur1 {
     padding-left: 25%; } }
+/*=========media queries 1500px================*/
+@media screen and (min-width: 1500px) {
+  .container1 {
+    top: 50%; } }
+/*=========media queries 2000px================*/
+@media screen and (min-width: 2000px) {
+  .container1 {
+    top: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
