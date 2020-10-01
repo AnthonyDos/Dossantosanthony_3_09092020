@@ -33,7 +33,7 @@ body {
 .loader { 
 	position: absolute;
 	top:100%;
-	left: 20%;
+  left: 20%;
 	@include load_spinner;
 	width: $size*10;
 	height: $size*7.5;
@@ -317,6 +317,9 @@ footer a {
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px)
 {
+  .loader {
+    left: 30%;
+  }
   .logo_h1 {
     height: auto;
   }
@@ -359,6 +362,9 @@ footer a {
 {
   .logo {
     height: auto;
+  }
+  .loader {
+    left: 40%;
   }
   .news {
     right:19%;

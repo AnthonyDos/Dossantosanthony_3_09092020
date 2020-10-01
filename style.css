@@ -332,6 +332,9 @@ footer a {
 
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px) {
+  .loader {
+    left: 30%; }
+
   .logo_h1 {
     height: auto; }
 
@@ -371,6 +374,9 @@ footer a {
 @media screen and (min-width: 900px) {
   .logo {
     height: auto; }
+
+  .loader {
+    left: 40%; }
 
   .news {
     right: 19%; }
