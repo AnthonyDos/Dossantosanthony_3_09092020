@@ -27,7 +27,7 @@ body {
 .loader {
   position: absolute;
   top: 100%;
-  left: 40%;
+  left: 20%;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: load;
@@ -450,7 +450,7 @@ span {
 
 .container1 {
   position: absolute;
-  top: 18%;
+  top: 31%;
   width: 100%; }
 
 .menu1__h, .menu1__h__h2 {
@@ -459,7 +459,7 @@ span {
   margin-left: 3%;
   margin-right: 20%;
   height: 50px;
-  font-size: 28px;
+  font-size: 23px;
   font-style: italic; }
 
 .menu1__h__coeur, .menu1__h__coeur1 {
@@ -484,7 +484,7 @@ span {
 .menu__ensemble__intitule {
   font-weight: normal;
   margin-left: 4%;
-  font-size: 18px; }
+  font-size: 15px; }
 
 .photo_photo1 {
   width: 100%;
@@ -629,7 +629,7 @@ footer a {
 /*=========media queries 500px================*/
 @media screen and (min-width: 500px) {
   .container1 {
-    top: 28%; } }
+    top: 40%; } }
 /*==========media queries 600px==================*/
 @media screen and (min-width: 600px) {
   .menu1__h, .menu1__h__h2 {
@@ -647,7 +647,7 @@ footer a {
 
   .container1 {
     position: absolute;
-    top: 33%; }
+    top: 50%; }
 
   .menu1__h__coeur, .menu1__h__coeur1 {
     right: 24%; }
@@ -682,7 +682,7 @@ footer a {
   .container1 {
     width: 80%;
     margin-left: 10%;
-    top: 39%; }
+    top: 60%; }
 
   .menu__h, .menu1__h__h2 {
     font-size: 35px;
@@ -694,6 +694,12 @@ footer a {
   h2.menu__ensemble__intitule {
     font-size: 24px;
     margin: 4% 0 0 4%; }
+
+  .plat1__coeur, .plat1__coeur2 {
+    right: 34%; }
+
+  .news {
+    right: 33%; }
 
   .menu__ensemble_entree {
     margin-left: 15%; }
@@ -717,7 +723,7 @@ footer a {
     margin: auto; } }
 @media screen and (min-width: 1200px) {
   .container1 {
-    top: 44%; } }
+    top: 60%; } }
 /*=======media queries 1366px========*/
 @media screen and (min-width: 1366px) {
   .menu1__h__coeur, .menu1__h__coeur1 {
