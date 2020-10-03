@@ -468,14 +468,7 @@ span {
   font-size: 23px;
   font-style: italic; }
 
-.menu1__h__h2 {
-  display: flex;
-  font-weight: bold;
-  margin-left: 3%;
-  margin-right: 20%;
-  height: 50px;
-  font-size: 23px;
-  font-style: italic;
+.menu1__h .menu1__h__h2 {
   width: 100%; }
 
 .menu1__h__coeur, .menu1__h__coeur1 {
@@ -582,7 +575,8 @@ span {
   display: flex;
   width: 0;
   transition: all 1s;
-  background-color: cyan; }
+  background-color: cyan;
+  transform: translate(0) rotate(360deg); }
 
 .check {
   margin: auto;
@@ -600,8 +594,8 @@ span {
   width: 95%; }
   .btn:hover > .box {
     width: 5em; }
-    .btn:hover > .box .check {
-      transform: rotate(0deg); }
+    .btn:hover > .box .check::before {
+      transform: rotate(360deg); }
 
 .menu__ensemble__textprix {
   margin-right: 20%; }

@@ -462,8 +462,8 @@ span {
 
 }
 
-.menu1__h__h2 {
-  @include text-menu;
+.menu1__h .menu1__h__h2 {
+  
   width: 100%;
 }
 .menu1__h__coeur, .menu1__h__coeur1 {
@@ -556,6 +556,7 @@ span {
   width: 0;
   transition: all 1s;
   background-color: cyan;
+  transform: translate(0) rotate(360deg);
 }  
 .check {
 	margin: auto;
@@ -577,8 +578,8 @@ span {
    
     &:hover > .box {
 	  width: 5em;
-	  .check {
-      transform: rotate(0deg);
+	  .check::before {
+      transform: rotate(360deg);
     }
   }
 }
