@@ -13,7 +13,7 @@
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions",
+  "browserslist": "last 10 versions",
   "bugs": {
     "url": "https://github.com/AnthonyDos/projet3_css_animer/issues"
   },
