@@ -40,7 +40,7 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	transition-property:all;
-  transition-delay: 5s;
+  transition-delay: 5s; 
   
 	&__bar {
 		background-color: $cd-bars;
