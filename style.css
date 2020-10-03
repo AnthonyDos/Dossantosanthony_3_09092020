@@ -23,16 +23,16 @@ body {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 .loader {
   position: absolute;
-  top: 100%;
-  left: 20%;
+  top: 50%;
+  margin: auto;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: load;
-  width: 30vh;
-  height: 22.5vh;
+  width: 45vh;
+  height: 34.5vh;
   display: flex;
   justify-content: space-evenly;
   transition-property: all;
