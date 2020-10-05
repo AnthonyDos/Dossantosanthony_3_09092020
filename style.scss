@@ -13,14 +13,34 @@
 body {
   min-width: 300px;
   @extend %flexbox;
-  padding: 0;
+  padding: 0; 
   margin: 0;
 }
 /*==============loader spinner=========================*/
+.ensembles {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  animation: loading 5s;
+  width: 100%;
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .load{
+  position: absolute;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-name:load;
+  animation-name:load; 
+  animation-delay: 2s;  
 }
 @keyframes load{
   0% {
@@ -31,9 +51,9 @@ body {
   }
 }
 .loader { 
-  position: absolute;
-	top:50%;
-  margin:auto;
+  position: fixed;
+  top:50%;
+  margin-left: 25%;
 	@include load_spinner;
 	width: $size*15;
 	height: $size*11.5;
@@ -318,7 +338,7 @@ footer a {
 @media screen and (min-width: 600px)
 {
   .loader {
-    left: 30%;
+    left: 15%;
   }
   .logo_h1 {
     height: auto;
@@ -365,7 +385,7 @@ footer a {
     height: auto;
   }
   .loader {
-    left: 40%;
+    left: 15%;
   }
   .news {
     right:19%;
@@ -526,7 +546,13 @@ span {
     @include slidedown(slide);
 }
 .btn {
-	border-radius: 15px;
+  display: flex;
+  margin: 2%;
+  overflow:hidden;
+  cursor: pointer;
+  border-radius: 15px;
+  height: 63px;
+  
 }
 .group__btn {
 	flex-grow: 1;
@@ -542,8 +568,12 @@ span {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.group__btn--text, .price {
+  margin-top: -9px;
+}
 .title_text {
   font-weight: bold;
+  margin-top: 10px;
 }
 .text {
   display: flex;
@@ -557,22 +587,17 @@ span {
   background-color: cyan;
   transform: translate(0) rotate(360deg);
 }  
-.check {
-	margin: auto;
+.check { 
+	margin: auto; 
 	border-radius: 50%;
   color: white;
   font-size: 30px;
-	transition: transform 1s;
+	transition: transform 1s; 
   transform: rotate(180deg);
-  
 }
 
    
 .btn {
-    display: flex;
-    margin: 2% 2% 2% 2%;
-    overflow: hidden;
-    cursor: pointer;
     width: 95%;
    
     &:hover > .box {
@@ -581,7 +606,7 @@ span {
       transform: rotate(0deg);
     }
   }
-}
+} 
 
 .menu__set__textprice  {
   @extend %space-between;
@@ -663,7 +688,7 @@ footer a {
   }
   .menu__set_entree, .menu__set_dish, .menu__set_dessert {
     margin: 0 5% 0 5%; 
-  }
+  }  
   .group {
     margin: 0 2% 0 2%; 
   }

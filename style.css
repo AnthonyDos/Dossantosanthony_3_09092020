@@ -14,10 +14,26 @@ body {
   margin: 0; }
 
 /*==============loader spinner=========================*/
+.ensembles {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  animation: loading 5s;
+  width: 100%; }
+
+@keyframes loading {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
 .load {
+  position: absolute;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-name: load; }
+  animation-name: load;
+  animation-delay: 2s; }
 
 @keyframes load {
   0% {
@@ -25,9 +41,9 @@ body {
   100% {
     opacity: 0; } }
 .loader {
-  position: absolute;
+  position: fixed;
   top: 50%;
-  margin: auto;
+  margin-left: 25%;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: load;
@@ -333,7 +349,7 @@ footer a {
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px) {
   .loader {
-    left: 30%; }
+    left: 15%; }
 
   .logo_h1 {
     height: auto; }
@@ -377,7 +393,7 @@ footer a {
     height: auto; }
 
   .loader {
-    left: 40%; }
+    left: 15%; }
 
   .news {
     right: 19%; }
@@ -549,7 +565,12 @@ span {
     transform: translateY(0);
     opacity: 1; } }
 .btn {
-  border-radius: 15px; }
+  display: flex;
+  margin: 2%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 15px;
+  height: 63px; }
 
 .group__btn {
   flex-grow: 1;
@@ -565,8 +586,12 @@ span {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+.group__btn--text, .price {
+  margin-top: -9px; }
+
 .title_text {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 10px; }
 
 .text {
   display: flex;
@@ -588,10 +613,6 @@ span {
   transform: rotate(180deg); }
 
 .btn {
-  display: flex;
-  margin: 2% 2% 2% 2%;
-  overflow: hidden;
-  cursor: pointer;
   width: 95%; }
   .btn:hover > .box {
     width: 5em; }
