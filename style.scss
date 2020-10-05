@@ -24,6 +24,7 @@ body {
   animation: loading 5s;
   width: 100%;
 }
+ 
 @keyframes loading {
   0% {
     opacity: 0;
@@ -37,6 +38,7 @@ body {
 }
 .load{
   position: absolute;
+
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name:load; 
@@ -488,11 +490,13 @@ span {
 .menu1__h__heart, .menu1__h__heart1 {
   position: absolute;
   right: 20%;
+  top:7%;
 }
 .menu1__h__heart1{
   opacity:0;
   color:white;
 }
+
 .menu1__h__heart1:hover{
   cursor:pointer;
   color:#9356DC;
@@ -571,7 +575,7 @@ span {
 .group__btn--text, .price {
   margin-top: -9px;
 }
-.title_text {
+.title_text { 
   font-weight: bold;
   margin-top: 10px;
 }

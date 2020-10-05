@@ -490,7 +490,8 @@ span {
 
 .menu1__h__heart, .menu1__h__heart1 {
   position: absolute;
-  right: 20%; }
+  right: 20%;
+  top: 7%; }
 
 .menu1__h__heart1 {
   opacity: 0;
