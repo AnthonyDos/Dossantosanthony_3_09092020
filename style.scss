@@ -599,23 +599,22 @@ span {
 	border-radius: 50%;
   color: white;
   font-size: 30px;
-  align-items: center;
-	transition: transform 1s; 
+  align-items: center; 
+  transition: transform 1s;  
   transform: rotate(180deg);
 }
-
+  
    
 .btn {
-    width: 95%;
-   
-    &:hover > .box {
+    width: 95%;   
+    &:hover > .box {    
 	  width: 5em;
 	  .check {
-      transform: rotate(0deg);
+      transform: rotate(0deg); 
     }
-  }
-} 
-
+  }  
+}  
+ 
 .menu__set__textprice  {
   @extend %space-between;
   margin-right: 20%; 
@@ -681,9 +680,7 @@ footer a {
   .header__title1 {
     font-size:40px;
   }
-  .img.logo{
-    padding-left: 32%;
-  }
+  
   .container1 {
     position: absolute;
     top: 50%; 
