@@ -107,6 +107,7 @@ header {
   display: flex;
   width: auto;
   margin: 0;
+  text-align: center;
   justify-content: center; 
   height: 66px;
 } 
@@ -270,15 +271,15 @@ h3 {
 }
 .dish1__heart {
   position: absolute;
-  right: 16px;
   padding-top: 3px;
-  font-size: 28px; 
+  right: 16px;
+  font-size:28px; 
 }
 
 .dish1__heart2{
   position:absolute;
+  font-size: 30px;
   right:15px;
-  font-size:30px;
   opacity:0;
   color:white;
 }  
@@ -286,7 +287,7 @@ h3 {
   cursor:pointer;
   color:#9356DC;
   animation-name: heart;
-  animation-duration:10s;
+  animation-duration:10s; 
 }
 @keyframes heart {
   0% {
@@ -464,18 +465,21 @@ display: flex;
 justify-content: space-around; 
 height: 66px;
 }
-  
+   
 .header__retour {
   margin-top:auto;
   margin-bottom: auto;
   font-size: 30px;
   color: black; 
 }
+img.logo {
+  margin: auto;
+}
   /*=====================partie centrale de la page========================*/
 span {
     border-bottom: 2px solid $tertiarycolor; 
 }
-.container1  {
+.container1  { 
   position: absolute;
   top:31%;
   width: 100%;
@@ -490,7 +494,6 @@ span {
 .menu1__h__heart, .menu1__h__heart1 {
   position: absolute;
   right: 20%;
-  top:7%;
 }
 .menu1__h__heart1{
   opacity:0;
@@ -596,6 +599,7 @@ span {
 	border-radius: 50%;
   color: white;
   font-size: 30px;
+  align-items: center;
 	transition: transform 1s; 
   transform: rotate(180deg);
 }
@@ -671,13 +675,13 @@ footer a {
     margin-left: 5%;
     height: 73px;
   }
-  header.header_title {
+  .headerheader_title {
     margin-right: 34%;
   }
   .header__title1 {
     font-size:40px;
   }
-  img.logo{
+  .img.logo{
     padding-left: 32%;
   }
   .container1 {
@@ -710,7 +714,7 @@ footer a {
   .header__retour {
     margin-left: 10%;
   }
-  img.logo {
+  .npmimg.logo {
     padding-left: 54%;
   }
   .photo_photo1 {
@@ -722,7 +726,7 @@ footer a {
     width:80%;
     margin-left:10%;
     top:60%;
-  }
+  } 
   .menu__h, .menu1__h__h2 {
     font-size: 35px;
     margin-left: 11%;
