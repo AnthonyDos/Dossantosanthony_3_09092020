@@ -304,11 +304,17 @@ h3 {
   cursor: pointer;
   color: #9356DC;
   animation-name: heart;
-  animation-duration: 10s; }
+  animation-duration: 3s; }
 
 @keyframes heart {
   0% {
     opacity: 0; }
+  /*25% {
+    opacity: 0.75;
+  }
+  50% { 
+    opacity: 0.90;
+  }*/
   100% {
     opacity: 1; } }
 .restaurant__position {
@@ -501,16 +507,9 @@ span {
   color: white; }
 
 .menu1__h__heart1:hover {
-  cursor: pointer;
   color: #9356DC;
-  animation-name: heart;
-  animation-duration: 10s; }
+  animation: heart 3s; }
 
-@keyframes heart {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 .menu__set__entitled {
   font-weight: normal;
   margin-left: 4%;

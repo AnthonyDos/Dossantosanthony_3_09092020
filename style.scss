@@ -287,12 +287,18 @@ h3 {
   cursor:pointer;
   color:#9356DC;
   animation-name: heart;
-  animation-duration:10s; 
+  animation-duration:3s; 
 }
 @keyframes heart {
   0% {
     opacity:0;
   }
+  /*25% {
+    opacity: 0.75;
+  }
+  50% { 
+    opacity: 0.90;
+  }*/
   100% {
     opacity:1;
   }
@@ -500,19 +506,9 @@ span {
   color:white;
 }
 
-.menu1__h__heart1:hover{
-  cursor:pointer;
+.menu1__h__heart1:hover{ 
   color:#9356DC;
-  animation-name: heart;
-  animation-duration:10s;
-}
-@keyframes heart {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  animation: heart 3s;
 }
 .menu__set__entitled {
     font-weight: normal;
@@ -609,11 +605,11 @@ span {
     width: 95%;   
     &:hover > .box {    
 	  width: 5em;
-	  .check {
-      transform: rotate(0deg); 
-    }
+	  .check { 
+      transform: rotate(0deg);  
+    }  
   }  
-}  
+}    
  
 .menu__set__textprice  {
   @extend %space-between;
