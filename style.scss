@@ -38,10 +38,7 @@ body {
 }
 .load{
   position: absolute;
-
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-name:load; 
+  @include load_spinner;
   animation-delay: 2s;  
 }
 @keyframes load{
