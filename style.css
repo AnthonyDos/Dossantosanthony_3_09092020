@@ -33,7 +33,8 @@ body {
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: load;
-  animation-delay: 2s; }
+  animation-delay: 2s;
+  width: 2%; }
 
 @keyframes load {
   0% {
@@ -43,7 +44,7 @@ body {
 .loader {
   position: fixed;
   top: 50%;
-  margin-left: 25%;
+  margin-left: 20%;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: load;
@@ -114,6 +115,39 @@ h3 {
   font-size: 14px;
   text-align: center; }
 
+#restaurant__btn {
+  list-style: none;
+  text-align: center;
+  width: 60%;
+  font-size: 8px;
+  padding: 0 10% 10% 20%; }
+  #restaurant__btn li {
+    background-color: #9356DC;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #B39DDB;
+    border: solid 1px #B39DDB; }
+
+#restaurant__btn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  padding: 4%;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 1.5em; }
+
+#restaurant__btn ul li a {
+  font-size: 1em; }
+
+#restaurant__btn li:hover {
+  background: linear-gradient(to top left, #b452c5, #e7c1ee);
+  box-shadow: 4px 4px 4px #B39DDB; }
+
+#restaurant__btn ul li:last-child {
+  border-radius: 0 0 25px 25px;
+  border: none; }
+
 .choice h2, .menu h2 {
   margin-left: 4%; }
 
@@ -134,18 +168,6 @@ h3 {
 
 .choice i {
   display: inline; }
-
-#restaurant__btn {
-  list-style: none;
-  text-align: center;
-  width: 60%;
-  font-size: 8px;
-  padding: 0 10% 10% 20%; }
-  #restaurant__btn li {
-    background-color: #9356DC;
-    border-radius: 25px;
-    box-shadow: 3px 3px 3px #B39DDB;
-    border: solid 1px #B39DDB; }
 
 #badge1:after {
   content: "1";
@@ -188,48 +210,6 @@ h3 {
   border-radius: 50%;
   color: white;
   border: 1px solid #9356DC; }
-
-#restaurant__btn li {
-  background: linear-gradient(to top left, #AB47BC, #E1BEE7);
-  border-radius: 25px;
-  box-shadow: 3px 3px 3px #B39DDB;
-  border: solid 1px #B39DDB; }
-
-#restaurant__btn li li {
-  max-height: 0;
-  overflow: hidden;
-  transition: all .5s;
-  border-radius: 0;
-  background: #B39DDB;
-  box-shadow: none;
-  border: none; }
-
-#restaurant__btn a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin: auto;
-  padding: 4%;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 1.5em; }
-
-#restaurant__btn ul li a, #restaurant__btn li:hover li a {
-  font-size: 1em; }
-
-#restaurant__btn li:hover {
-  background: linear-gradient(to top left, #b452c5, #e7c1ee);
-  box-shadow: 4px 4px 4px #B39DDB; }
-
-#restaurant__btn li li:hover {
-  background: linear-gradient(to top left, #b452c5, #e7c1ee); }
-
-#restaurant__btn ul li:last-child {
-  border-radius: 0 0 25px 25px;
-  border: none; }
-
-#restaurant__btn li:hover li {
-  max-height: 15em; }
 
 /*==========group============*/
 .restaurant, .choice {
@@ -309,12 +289,6 @@ h3 {
 @keyframes heart {
   0% {
     opacity: 0; }
-  /*25% {
-    opacity: 0.75;
-  }
-  50% { 
-    opacity: 0.90;
-  }*/
   100% {
     opacity: 1; } }
 .restaurant__position {
@@ -356,7 +330,7 @@ footer a {
 /*=====media queries min-width:600px page index=======*/
 @media screen and (min-width: 600px) {
   .loader {
-    left: 15%; }
+    left: 5%; }
 
   .logo_h1 {
     height: auto; }
@@ -532,7 +506,6 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
-  transition: 5s;
   animation: slidedown 5s; }
 @keyframes slidedown {
   from {
@@ -545,7 +518,6 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
-  transition: 11s;
   animation: slidedown 11s; }
 @keyframes slidedown {
   from {
@@ -558,7 +530,6 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
-  transition: 16s;
   animation: slidedown 16s; }
 @keyframes slidedown {
   from {
