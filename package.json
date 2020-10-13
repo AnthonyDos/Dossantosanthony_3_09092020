@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnthonyDos/projet3_css_animer.git"
+    "url": "git+https://github.com/AnthonyDos/Dossantosanthony_3_09092020.git"
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 10 versions",
+  "browserslist": "last 4 versions", 
   "bugs": {
-    "url": "https://github.com/AnthonyDos/projet3_css_animer/issues"
+    "url": "https://github.com/AnthonyDos/Dossantosanthony_3_09092020.git/issues"
   },
-  "homepage": "https://github.com/AnthonyDos/projet3_css_animer#readme"
+  "homepage": "https://github.com/AnthonyDos/Dossantosanthony_3_09092020.git#readme"
 }
