@@ -115,52 +115,40 @@ header {
   background-color: white; 
 }
 .restaurant h2 {
-  font-family: 'shrikhand', cursive;
+  font-family:$font-family_title;
+  font-weight: bold;;
+  text-decoration: none;
   text-align: center;
-  font-size: 17px; 
-}
-h3 {
-  font-family:roboto;
+  font-size: 17px;  
+} 
+h3 { 
+  font-family:$font-family_p;
   font-size:14px;
   text-align:center;
 }
+button {
+  border-radius: 25px;
+}
 #restaurant__btn 
 {
-  list-style: none;
+  font-family: "roboto";
   text-align: center;
-  width: 60%;
-  font-size: 8px;
-  padding:0 10% 10% 20%;   
-  & li {
-    background-color:$primarycolor;
-    border-radius: 25px;
-    box-shadow: 3px 3px 3px $couleurhover;
-    border: solid 1px $couleurhover; 
-  }
-} 
-#restaurant__btn a {
-  display: block;
-  text-decoration: none;
-  color: white;
   margin: auto;
-  padding: 4%;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 1.5em; 
-  
-}
-#restaurant__btn ul li a{
-  font-size: 1em; 
-}
-#restaurant__btn li:hover {
-  background: linear-gradient(to top left, #b452c5,#e7c1ee);
+  width: 70%;
+  font-weight: 900;
+  color: white; 
+  height: 45px;
+  border-radius: 25px;
+  background: linear-gradient(to top left,$primarycolor,#FF79DA );
+  box-shadow: 3px 3px 3px $couleurhover;
+  border: solid 1px $couleurhover; 
+   
+}  
+#restaurant__btn:hover {
+  background: linear-gradient(to bottom right, #b452c5,#e7c1ee);
   box-shadow: 4px 4px 4px $couleurhover; 
 }
-
-#restaurant__btn ul li:last-child {
-  border-radius: 0 0 25px 25px;
-  border: none; 
-}
+ 
 .choice h2, .menu h2 {
   margin-left:4%;
 }
@@ -238,15 +226,19 @@ h3 {
 .dish1__paragraph a {
   padding-bottom: 5px;
   text-decoration: none; 
+  color: black;
+  font-family: $font-family_title;
 }
 .dish1__paragraph--text {
   font-size: 14px;
+  font-family: $font-family_p;
 }
 .dish1__paragraph--title {
   font-weight: bold;
+  font-family: $font-family_p;
 }
 .news{
-  @include new;
+  @include new; 
 }
 .dish1__heart {
   position: absolute;
@@ -281,16 +273,10 @@ h3 {
   width: 100%;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-family: $font-family_p;
   text-align: center;
   background-color: #E0E0E0;
-  border-top: 2px solid #BDBDBD; 
-}
-.identity {
-  text-align: justify;
-  width: 94%;
-  margin-top: 14px;
-  margin-left: 2%;
-  margin-right:2%;
+  border-top: 2px solid #BDBDBD;  
 }
 /*===============footer============*/
 footer {
@@ -337,9 +323,6 @@ footer a {
   }
   #restaurant__btn  {
     width:30%;
-    margin-left:auto;
-    margin-right:25%;
-    padding-bottom:5%;
   }
   .choice {
     margin:auto;
@@ -457,10 +440,11 @@ img.logo {
   /*=====================partie centrale de la page========================*/
 span {
     border-bottom: 2px solid $tertiarycolor; 
+    font-family: $font-family_p;
 }
 .container1  { 
-  position: absolute;
-  top:31%;
+  position: relative;
+  top:-67px;
   width: 100%;
 }  
 .menu1__h {
@@ -469,6 +453,7 @@ span {
 
 .menu1__h .menu1__h__h2 {
   width: 100%;
+  font-family: $font-family_title;
 }
 .menu1__h__heart, .menu1__h__heart1 {
   position: absolute;
@@ -488,6 +473,9 @@ span {
     margin-left: 4%;
     font-size: 15px; 
 }  
+.menu__set__entitled {
+  font-family: $font-family_p;
+}
 .photo_photo1 {
     width: 100%;
     height:auto;  
@@ -557,7 +545,7 @@ span {
   display: flex;
   width: 0;
   transition: all 1s;
-  background-color: cyan;
+  background-color: $tertiarycolor;
   transform: translate(0) rotate(360deg);
 }  
 .check { 
@@ -596,7 +584,7 @@ span {
   margin: 4% 30% 4% 30%;
   padding: 2% 0 2% 0;
   background: linear-gradient(to top left, #AB47BC,#E1BEE7);
-  border: #9356DC;
+  border: $primarycolor;
   color: white; 
   box-shadow: 3px 3px 3px $couleurhover;
 }
@@ -626,14 +614,7 @@ footer a {
     text-decoration: none;
     color: white; 
 }
-/*=========media queries 500px================*/
-@media screen and (min-width:500px)
-{
-  .container1 {
-    top:40%;
-  }
-}
-/*==========media queries 600px==================*/
+
 @media screen and (min-width:600px)
 {
   .menu1__h, .menu1__h__h2 {
@@ -648,8 +629,8 @@ footer a {
   }
   
   .container1 {
-    position: absolute;
-    top: 50%; 
+    position: relative;
+    top: -110px; 
   }
   .menu1__h__heart, .menu1__h__heart1  {
     right: 24%;
@@ -684,11 +665,10 @@ footer a {
     width:80%;
     height:auto;
     margin-left:10%;
-  }
+  } 
   .container1 {
     width:80%;
     margin-left:10%;
-    top:60%;
   } 
   .menu__h, .menu1__h__h2 {
     font-size: 35px;
@@ -736,29 +716,7 @@ footer a {
 @media screen and (min-width:1200px)
 {
   .container1{
-    top:60%
+    top:-180px;
   } 
-
+ 
 } 
-
-/*=======media queries 1366px========*/
-@media screen and (min-width:1366px) {
-  .menu1__h__heart, .menu1__h__heart1 
-  {
-    padding-left: 25%; 
-  }
-}
-/*=========media queries 1500px================*/
-@media screen and (min-width:1500px)
-{
-  .container1 {
-    top:50%;
-  }
-}
-/*=========media queries 2000px================*/
-@media screen and (min-width:2000px)
-{
-  .container1 {
-    top:80%;
-  }
-}
